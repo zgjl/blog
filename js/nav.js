@@ -19,5 +19,10 @@ $(function () {
 		$("#section4").slideDown(1000);
 		$("#section4").siblings().hide();
 	})
+
+	$("#li5").click(function () {
+		$("#section5").slideDown(1000);
+		$("#section5").siblings().hide();
+	})
 	
 })
