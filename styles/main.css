@@ -26,7 +26,7 @@ body {
 }
 
 #body {
-    width: 800px;
+    width: 750px;
     height: auto;
     margin: 10px auto;
 }
@@ -96,12 +96,12 @@ aside li {
 }
 
 section {
-    width: 700px;
+    width: 650px;
     float: left;
 }
 
 .box {
-    width: 640px;
+    width: 590px;
     padding: 10px 20px 40px 20px;
     margin: 10px 0 20px 20px;
     background-color: rgb(235, 235, 235);
@@ -133,7 +133,7 @@ p {
 }
 
 img {
-    width: 640px;
+    width: 590px;
     margin-top: 10px;
 }
 
