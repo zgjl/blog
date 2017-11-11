@@ -26,7 +26,7 @@ body {
 }
 
 #body {
-    width: 900px;
+    width: 800px;
     height: auto;
     margin: 10px auto;
 }
@@ -61,7 +61,7 @@ header {
     color: white;
 }
 aside {
-    width: 200px;
+    width: 100px;
     float: left;
     line-height: 30px;
 }
