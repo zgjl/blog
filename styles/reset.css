@@ -14,8 +14,8 @@ field,img{ border:0;}
 button,input,select,textarea{ font-size:100%;}
 table{ border-collapse:collapse; border-spacing:0;}
 
-html .hide{ display:none;}
-ul li {list-style-type: none;}
+.hide{ display:none;}
+ul li{list-style-type: none;}
 a, a:hover { text-decoration: none;}
 a {color: inherit;outline: 0;}
 .clearfix:after{content:"";display:block;clear:both;}

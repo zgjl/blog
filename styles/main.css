@@ -3,7 +3,7 @@ body {
     min-width: 820px;
     min-height: 1000px;
     padding-bottom: 80px;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(150, 150, 150);
 }
 
 #body {
@@ -35,27 +35,33 @@ footer div {
 }
 
 header {
-    background-color:white;
+    background-color: white;
     height: 60px;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 10px;
     padding-left: 20px;
     padding-top: 20px;
     border-radius: 2px;
-    background-color: rgb(210,230,230)
+    background-color: rgb(210, 230, 230)
 }
-
+header p{
+    float:left;
+    padding-top: 8px;
+}
 header div {
     float: right;
     margin-right: 20px;
-    font-family: Arial, Helvetica, sans-serif;   
+    font-family: Arial, Helvetica, sans-serif;
 }
-.switch{
-font-size:14px;
+
+.switch {
+    font-size: 14px;
 }
-.switch span{
-    margin-right: 20px;
+
+.switch span {
+    margin-right: 8px;
 }
+
 .switch-open {
     display: inline-block;
     padding: 8px 13px 8px 17px;
@@ -63,6 +69,7 @@ font-size:14px;
     border-right: none;
     cursor: pointer;
 }
+
 .switch-close {
     display: inline-block;
     padding: 8px 17px 8px 13px;
@@ -70,9 +77,11 @@ font-size:14px;
     border-left: none;
     cursor: pointer;
 }
-.active{
+
+.active {
     background-color: rgb(45, 155, 189)
 }
+
 aside {
     width: 140px;
     float: left;
@@ -130,6 +139,7 @@ aside li {
 section {
     width: 660px;
     float: left;
+    margin-bottom: 100px;
 }
 
 .box {
@@ -169,12 +179,18 @@ img {
     margin-top: 10px;
 }
 
-.back-to-top {
+.loadhtml {
+    text-align: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#btn-top {
     width: 40px;
     position: fixed;
     left: 50%;
     margin-left: 405px;
-    bottom: 0;
+    bottom: 110px;
     z-index: 1;
 }
 
