@@ -43,7 +43,7 @@ $(function () {
 		$(".box").css("color", "rgb(255, 255, 255)")
 		$(".content p").css("color", "rgb(255, 255, 255)")
 		$("#section3 .content a").css("color", "rgb(255, 255, 255)")
-		
+		$(".more").css("color", "rgb(255, 255, 255)")
 	})
 	$(".switch-close").click(function () {
 		$(this).addClass("active");
@@ -53,7 +53,7 @@ $(function () {
 		$(".box").css("color", "rgba(0, 0, 0, 0.8)")
 		$(".content p").css("color", "rgba(0, 0, 0, 0.8)")
 		$("#section3 .content a").css("color", "rgb(41, 164, 180)")
-		
+		$(".more").css("color", "rgb(97, 137, 182)")
 	})
 	
 	var num2 = 1;
