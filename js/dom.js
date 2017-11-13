@@ -18,6 +18,5 @@ document.body.addEventListener('DOMSubtreeModified', function () {
 			$(this).text("全文")
 		}
 	})
-
-
+	
 }, false);
