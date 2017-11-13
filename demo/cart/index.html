@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <style>
+    body {
+      width: auto;
+    }
+
+    #app {
+      width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      width: 1000px;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 20px;
+    }
+    /* 表格 */
+
+    #table {
+      padding-top: 30px;
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #table-header {
+      display: table-header-group;
+      width: 100%;
+    }
+
+    #table-header ul {
+      display: table-row;
+      width: 100%;
+    }
+
+    #table-header li {
+      display: table-cell;
+      color: white;
+      background-color: rgb(73, 73, 73);
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      width: 200px;
+      height: 50px;
+    }
+
+    #table-list {
+      display: table-row-group;
+      width: 100%;
+    }
+
+    #table-list li {
+      display: table-row;
+      width: 100%;
+    }
+
+    #table-list li div {
+      display: table-cell;
+      background-color: whitesmoke;
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      height: 60px;
+    }
+
+    #table-list li div {
+      display: table-cell;
+      background-color: whitesmoke;
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      height: 60px;
+      position: relative;
+    }
+
+
+    img {
+      width: 100px;
+    }
+
+    input {
+      width: 30px;
+      text-align: center;
+      background-color: rgb(252, 253, 154);
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .addsub a {
+      font-size: 24px;
+    }
+
+    .choose {
+      font-size: 30px;
+    }
+
+    .qx {
+      font-size: 30px;
+    }
+
+    .count {
+      width: 100%;
+      position: relative;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .left {
+      float: left;
+      margin-left: 25px;
+    }
+
+    .right {
+      float: right;
+      position: absolute;
+      right: 200px;
+      color: red;
+    }
+
+    .check {
+      color: red;
+    }
+
+    .right a {
+      display: inline-block;
+      width: 80px;
+      line-height: 35px;
+      height: 35px;
+      text-align: center;
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <h1>购物车</h1>
+    <!-- 表格 -->
+    <div id="table">
+      <div id="table-header">
+        <ul>
+          <li>商品图片</li>
+          <li>商品名称</li>
+          <li>商品金额</li>
+          <li>商品数量</li>
+          <li>总金额</li>
+          <li>编辑</li>
+        </ul>
+      </div>
+      <ul id="table-list">
+        <li v-for="item in list ">
+          <div>
+            <a href="javascript:; " class="choose " v-bind:class="{ 'check':item.checked} " v-on:click="check(item) ">○ </a>
+            <img v-bind:src="item.src "> </div>
+          <div>{{item.spxx}}</div>
+          <div>{{item.spje|formatValue}}</div>
+          <div class="addsub">
+            <a href="javascript:; " v-on:click="changeMoney(item,-1) ">-</a>
+            <input v-model="item.spsl " type="text ">
+            <a href="javascript:; " v-on:click="changeMoney(item,1) ">+</a>
+          </div>
+          <div style="color:red">{{item.spje*item.spsl|formatValue}}</div>
+          <div>
+            <a style="color:rgb(0, 4, 255)" href="javascript:; " v-on:click="delConfirm(item) ">删除</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="count">
+      <a href="javascript:; " class="left qx" v-bind:class="{ 'check':checkallflag} " v-on:click="checkall(true) ">○ </a>
+      <div class="left ">
+        <i>&nbsp;&nbsp;&nbsp;&nbsp;</i>
+        <a v-on:click="checkall(true) ">全选</a>
+        <i>&nbsp;&nbsp;</i>
+        <a v-on:click="checkall(false) ">取消全选</a>
+      </div>
+      <div class="right ">总计: {{total|formatValue}}&nbsp;&nbsp;
+        <a href="./account.html">去结算</a>
+      </div>
+
+    </div>
+  </div>
+  <script src="./vue.min.js "></script>
+  <script src="./vue-resource.js "></script>
+  <script src="./vm.js "></script>
+</body>
+
+</html>

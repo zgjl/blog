@@ -1,0 +1,40 @@
+{
+    "list": [
+        {
+            "addressID":1,
+            "userName": "name1",
+            "address": "1浙江省杭州市西湖区xx街道xx路",
+            "phone": 12312345678,
+            "isDefault": true
+        },
+        {
+            "addressID":2,
+            "userName": "name2",
+            "address": "2浙江省杭州市西湖区xx街道xx路",
+            "phone": 12312345678,
+            "isDefault": false
+        },
+        {
+            "addressID":3,
+            "userName": "name3",
+            "address": "3浙江省杭州市西湖区xx街道xx路",
+            "phone": 12312345678,
+            "isDefault": false
+        },
+        {
+            "addressID":4,
+            "userName": "name4",
+            "address": "4浙江省杭州市西湖区xx街道xx路",
+            "phone": 12312345678,
+            "isDefault": false
+        },
+        {
+            "addressID":5,
+            "userName": "name5",
+            "address": "5浙江省杭州市西湖区xx街道xx路",
+            "phone": 12312345678,
+            "isDefault": false
+        }
+
+    ]
+}

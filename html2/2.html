@@ -1,0 +1,209 @@
+
+    <article class="article">
+      <div class="title">BOM</div>
+      <div class="more">全文</div>
+      <div class="content">
+        <p> 浏览器对象模型（Browser Object Model）
+          所有浏览器都支持 window 对象。它表示浏览器窗口。
+          所有 JavaScript 全局对象、函数以及变量均自动成为 window 对象的成员。
+          全局变量是 window 对象的属性。
+          全局函数是 window 对象的方法。
+          Window 尺寸
+          有三种方法能够确定浏览器窗口的尺寸（浏览器的视口，不包括工具栏和滚动条）。
+          对于Internet Explorer、Chrome、Firefox、Opera 以及 Safari：
+              window.innerHeight - 浏览器窗口的内部高度
+              window.innerWidth - 浏览器窗口的内部宽度
+          对于 Internet Explorer 8、7、6、5：
+              document.documentElement.clientHeight
+              document.documentElement.clientWidth
+          或者
+              document.body.clientHeight
+              document.body.clientWidth
+          实用的 JavaScript 方案（涵盖所有浏览器）：
+          实例
+          var w=window.innerWidth
+          || document.documentElement.clientWidth
+          || document.body.clientWidth;
+          
+          var h=window.innerHeight
+          || document.documentElement.clientHeight
+          || document.body.clientHeight;
+          
+              window.open() - 打开新窗口
+              window.close() - 关闭当前窗口
+              window.moveTo() - 移动当前窗口
+          window.resizeTo() - 调整当前窗口的尺寸
+          
+          window.screen 对象包含有关用户屏幕的信息
+          screen.availWidth 属性返回访问者屏幕的宽度，以像素计，减去界面特性，比如窗口任务栏。
+          screen.availHeight 属性返回访问者屏幕的高度，以像素计，减去界面特性，比如窗口任务栏。
+          
+          
+          
+          
+          
+          
+          
+          
+          window.location 对象用于获得当前页面的地址 (URL)，并把浏览器重定向到新的页面。
+          window.location 对象在编写时可不使用 window 这个前缀。
+          一些例子：
+          location.hostname 返回 web 主机的域名
+          location.pathname 返回当前页面的路径和文件名
+          location.port 返回 web 主机的端口 （80 或 443）
+          location.protocol 返回所使用的 web 协议（http:// 或 https://）
+          location.href 属性返回当前页面的 URL。
+          location.assign() 方法加载新的文档。
+          
+          window.history 对象包含浏览器的历史。
+          history.back() 方法加载历史列表中的前一个 URL。
+          history forward() 方法加载历史列表中的下一个 URL。
+          
+          window.navigator 对象包含有关访问者浏览器的信息。
+          &lt;div id="example"&gt;&lt;/div&gt;
+          &lt;script&gt;
+          txt = "&lt;p&gt;Browser CodeName: " + navigator.appCodeName + "&lt;/p&gt;";
+          txt+= "&lt;p&gt;Browser Name: " + navigator.appName + "&lt;/p&gt;";
+          txt+= "&lt;p&gt;Browser Version: " + navigator.appVersion + "&lt;/p&gt;";
+          txt+= "&lt;p&gt;Cookies Enabled: " + navigator.cookieEnabled + "&lt;/p&gt;";
+          txt+= "&lt;p&gt;Platform: " + navigator.platform + "&lt;/p&gt;";
+          txt+= "&lt;p&gt;User-agent header: " + navigator.userAgent + "&lt;/p&gt;";
+          txt+= "&lt;p&gt;User-agent language: " + navigator.systemLanguage + "&lt;/p&gt;";
+          document.getElementById("example").innerHTML=txt;
+          &lt;/script&gt;
+          来自 navigator 对象的信息具有误导性，不应该被用于检测浏览器版本，这是因为：
+              navigator 数据可被浏览器使用者更改
+          浏览器无法报告晚于浏览器发布的新操作系统
+          
+          可以在 JavaScript 中创建三种消息框：警告框、确认框、提示框
+          警告框经常用于确保用户可以得到某些信息。
+          当警告框出现后，用户需要点击确定按钮才能继续进行操作。
+          语法：
+          alert("文本")
+          确认框用于使用户可以验证或者接受某些信息。
+          当确认框出现后，用户需要点击确定或者取消按钮才能继续进行操作。
+          如果用户点击确认，那么返回值为 true。如果用户点击取消，那么返回值为 false。
+          语法：
+          confirm("文本")
+          
+          提示框经常用于提示用户在进入页面前输入某个值。
+          当提示框出现后，用户需要输入某个值，然后点击确认或取消按钮才能继续操纵。
+          如果用户点击确认，那么返回值为输入的值。如果用户点击取消，那么返回值为 null。
+          语法：
+          prompt("文本","默认值")
+          
+          setTimeout()
+          语法
+          var t=setTimeout("javascript语句",毫秒)
+          clearTimeout()
+          语法
+          clearTimeout(setTimeout_variable)
+          
+          cookie是存储于访问者的计算机中的变量。每当同一台计算机通过浏览器请求某个页面时，就会发送这个 cookie。你可以使用 JavaScript 来创建和取回 cookie 的值。
+          有关cookie的例子：
+          
+          名字 cookie
+              当访问者首次访问页面时，他或她也许会填写他/她们的名字。名字会存储于 cookie 中。当访问者再次访问网站时，他们会收到类似 "Welcome John Doe!" 的欢迎词。而名字则是从 cookie 中取回的。
+          密码 cookie
+              当访问者首次访问页面时，他或她也许会填写他/她们的密码。密码也可被存储于 cookie 中。当他们再次访问网站时，密码就会从 cookie 中取回。
+          日期 cookie
+              当访问者首次访问你的网站时，当前的日期可存储于 cookie 中。当他们再次访问网站时，他们会收到类似这样的一条消息："Your last visit was on Tuesday August 11, 2005!"。日期也是从 cookie 中取回的。
+          
+          创建和存储 cookie
+          在这个例子中我们要创建一个存储访问者名字的 cookie。当访问者首次访问网站时，他们会被要求填写姓名。名字会存储于 cookie 中。当访问者再次访问网站时，他们就会收到欢迎词。
+          首先，我们会创建一个可在 cookie 变量中存储访问者姓名的函数：
+          function setCookie(c_name,value,expiredays)
+          {
+          var exdate=new Date()
+          exdate.setDate(exdate.getDate()+expiredays)
+          document.cookie=c_name+ "=" +escape(value)+
+          ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+          }
+          
+          上面这个函数中的参数存有 cookie 的名称、值以及过期天数。
+          
+          在上面的函数中，我们首先将天数转换为有效的日期，然后，我们将 cookie 名称、值及其过期日期存入 document.cookie 对象。
+          
+          之后，我们要创建另一个函数来检查是否已设置 cookie：
+          
+          function getCookie(c_name)
+          {
+          if (document.cookie.length&gt;0)
+            {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+              { 
+              c_start=c_start + c_name.length+1 
+              c_end=document.cookie.indexOf(";",c_start)
+              if (c_end==-1) c_end=document.cookie.length
+              return unescape(document.cookie.substring(c_start,c_end))
+              } 
+            }
+          return ""
+          }
+          
+          上面的函数首先会检查 document.cookie 对象中是否存有 cookie。假如 document.cookie 对象存有某些 cookie，那么会继续检查我们指定的 cookie 是否已储存。如果找到了我们要的 cookie，就返回值，否则返回空字符串。
+          
+          最后，我们要创建一个函数，这个函数的作用是：如果 cookie 已设置，则显示欢迎词，否则显示提示框来要求用户输入名字。
+          
+          function checkCookie()
+          {
+          username=getCookie('username')
+          if (username!=null && username!="")
+            {alert('Welcome again '+username+'!')}
+          else 
+            {
+            username=prompt('Please enter your name:',"")
+            if (username!=null && username!="")
+              {
+              setCookie('username',username,365)
+              }
+            }
+          }
+          这是所有的代码：
+          &lt;html&gt;
+          &lt;head&gt;
+          &lt;script type="text/javascript"&gt;
+          function getCookie(c_name)
+          {
+          if (document.cookie.length&gt;0)
+            {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+              { 
+              c_start=c_start + c_name.length+1 
+              c_end=document.cookie.indexOf(";",c_start)
+              if (c_end==-1) c_end=document.cookie.length
+              return unescape(document.cookie.substring(c_start,c_end))
+              } 
+            }
+          return ""
+          }
+          function setCookie(c_name,value,expiredays)
+          {
+          var exdate=new Date()
+          exdate.setDate(exdate.getDate()+expiredays)
+          document.cookie=c_name+ "=" +escape(value)+
+          ((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+          }
+          function checkCookie()
+          {
+          username=getCookie('username')
+          if (username!=null && username!="")
+            {alert('Welcome again '+username+'!')}
+          else 
+            {
+            username=prompt('Please enter your name:',"")
+            if (username!=null && username!="")
+              {
+              setCookie('username',username,365)
+              }
+            }
+          }
+          &lt;/script&gt;
+          &lt;/head&gt;
+          &lt;body onLoad="checkCookie()"&gt;
+          &lt;/body&gt;&lt;/html&gt;
+          </p>
+      </div>
+    </article>

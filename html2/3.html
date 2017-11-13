@@ -1,0 +1,279 @@
+
+    <article class="article">
+      <div class="title">DOM</div>
+      <div class="more">全文</div>
+      <div class="content">
+        <p>HTML DOM 是关于如何获取、修改、添加或删除 HTML 元素的标准
+          
+          在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML。
+          DOM 节点
+          根据 W3C 的 HTML DOM 标准，HTML 文档中的所有内容都是节点：
+              整个文档是一个文档节点
+              每个 HTML 元素是元素节点
+              HTML 元素内的文本是文本节点
+              每个 HTML 属性是属性节点
+          注释是注释节点
+          
+          HTML DOM 将 HTML 文档视作树结构。这种结构被称为节点树
+          节点父、子和同胞
+          节点树中的节点彼此拥有层级关系。
+          父（parent）、子（child）和同胞（sibling）等术语用于描述这些关系。父节点拥有子节点。同级的子节点被称为同胞（兄弟或姐妹）。
+              在节点树中，顶端节点被称为根（root）
+              每个节点都有父节点、除了根（它没有父节点）
+              一个节点可拥有任意数量的子
+          同胞是拥有相同父节点的节点
+          HTML DOM 方法
+          HTML DOM 对象 - 方法和属性
+          一些常用的 HTML DOM 属性：
+              innerHTML - 节点（元素）的文本值
+              parentNode - 节点（元素）的父节点
+              childNodes - 节点（元素）的子节点
+          attributes - 节点（元素）的属性节点
+          
+          方法	描述
+          getElementById()	返回带有指定 ID 的元素。
+          getElementsByTagName()	返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。
+          getElementsByClassName()	返回包含带有指定类名的所有元素的节点列表。
+          appendChild()	把新的子节点添加到指定节点。
+          removeChild()	删除子节点。
+          replaceChild()	替换子节点。
+          insertBefore()	在指定的子节点前面插入新的子节点。
+          createAttribute()	创建属性节点。
+          createElement()	创建元素节点。
+          createTextNode()	创建文本节点。
+          getAttribute()	返回指定的属性值。
+          setAttribute()	把指定属性设置或修改为指定的值。
+          innerHTML 属性
+          获取元素内容的最简单方法是使用 innerHTML 属性
+          nodeName 属性
+          nodeName 属性规定节点的名称。
+              nodeName 是只读的
+              元素节点的 nodeName 与标签名相同
+              属性节点的 nodeName 与属性名相同
+              文本节点的 nodeName 始终是 #text
+          文档节点的 nodeName 始终是 #document
+          
+          nodeValue 属性
+          nodeValue 属性规定节点的值。
+              元素节点的 nodeValue 是 undefined 或 null
+              文本节点的 nodeValue 是文本本身
+          属性节点的 nodeValue 是属性值
+          
+          nodeType 属性
+          nodeType 属性返回节点的类型。nodeType 是只读的。
+          比较重要的节点类型有：
+          整个文档是一个文档节点
+          每个 HTML 元素是元素节点
+          HTML 元素内的文本是文本节点
+          每个 HTML 属性是属性节点
+          注释是注释节点
+          元素类型	NodeType
+          元素	1
+          属性	2
+          文本	3
+          注释	8
+          文档	9
+          
+          访问 HTML 元素（节点）
+          访问 HTML 元素等同于访问节点
+          您能够以不同的方式来访问 HTML 元素：
+              通过使用 getElementById() 方法
+              通过使用 getElementsByTagName() 方法
+          通过使用 getElementsByClassName() 方法
+          
+          修改 HTML 元素
+          修改 HTML DOM 意味着许多不同的方面：
+              改变 HTML 内容
+              改变 CSS 样式
+              改变 HTML 属性
+              创建新的 HTML 元素
+              删除已有的 HTML 元素
+              改变事件（处理程序）
+          
+          
+          创建新的 HTML 元素 - appendChild()
+          如需向 HTML DOM 添加新元素，您首先必须创建该元素，然后把它追加到已有的元素上。
+          
+          创建新的 HTML 元素 - insertBefore()
+          上一个例子中的 appendChild() 方法，将新元素作为父元素的最后一个子元素进行添加。
+          
+          替换 HTML 元素
+          如需替换 HTML DOM 中的元素，请使用 replaceChild() 方法
+          
+          
+          DOM 根节点
+          这里有两个特殊的属性，可以访问全部文档：
+              document.documentElement - 全部文档
+          document.body - 文档的主体
+          
+          除了 innerHTML 属性，您也可以使用 childNodes 和 nodeValue 属性来获取元素的内容
+          &lt;p id="intro">Hello World!&lt;/p>
+          &lt;script>
+          var txt=document.getElementById("intro").childNodes[0].nodeValue;
+          document.write(txt);
+          &lt;/script>
+          
+          HTML DOM Document 对象
+          Document 对象
+          每个载入浏览器的 HTML 文档都会成为 Document 对象。
+          Document 对象使我们可以从脚本中对 HTML 页面中的所有元素进行访问。
+          提示：Document 对象是 Window 对象的一部分，可通过 window.document 属性对其进行访问。
+          Document 对象集合
+          集合	描述
+          all[]	提供对文档中所有 HTML 元素的访问。
+          anchors[]	返回对文档中所有 Anchor 对象的引用。
+          applets	返回对文档中所有 Applet 对象的引用。
+          forms[]	返回对文档中所有 Form 对象引用。
+          images[]	返回对文档中所有 Image 对象引用。
+          links[]	返回对文档中所有 Area 和 Link 对象引用。
+          Document 对象属性
+          属性	描述
+          body	提供对 &lt;body> 元素的直接访问。
+          对于定义了框架集的文档，该属性引用最外层的 &lt;frameset>。
+          cookie	设置或返回与当前文档有关的所有 cookie。
+          domain	返回当前文档的域名。
+          lastModified	返回文档被最后修改的日期和时间。
+          referrer	返回载入当前文档的文档的 URL。
+          title	返回当前文档的标题。
+          URL	返回当前文档的 URL。
+          Document 对象方法
+          方法	描述
+          close()	关闭用 document.open() 方法打开的输出流，并显示选定的数据。
+          getElementById()	返回对拥有指定 id 的第一个对象的引用。
+          getElementsByName()	返回带有指定名称的对象集合。
+          getElementsByTagName()	返回带有指定标签名的对象集合。
+          open()	打开一个流，以收集来自任何 document.write() 或 document.writeln() 方法的输出。
+          write()	向文档写 HTML 表达式 或 JavaScript 代码。
+          writeln()	等同于 write() 方法，不同的是在每个表达式之后写一个换行符。
+          
+          
+          
+          
+          
+          HTML DOM Element 对象
+          HTML DOM 节点
+          在 HTML DOM （文档对象模型）中，每个部分都是节点：
+          文档本身是文档节点
+          所有 HTML 元素是元素节点
+          所有 HTML 属性是属性节点
+          HTML 元素内的文本是文本节点
+          注释是注释节点
+          Element 对象
+          在 HTML DOM 中，Element 对象表示 HTML 元素。
+          Element 对象可以拥有类型为元素节点、文本节点、注释节点的子节点。
+          NodeList 对象表示节点列表，比如 HTML 元素的子节点集合。
+          下面的属性和方法可用于所有 HTML 元素上：
+          属性 / 方法	描述
+          element.accessKey	设置或返回元素的快捷键。
+          element.appendChild()	向元素添加新的子节点，作为最后一个子节点。
+          element.attributes	返回元素属性的 NamedNodeMap。
+          element.childNodes	返回元素子节点的 NodeList。
+          element.className	设置或返回元素的 class 属性。
+          element.clientHeight	返回元素的可见高度。
+          element.clientWidth	返回元素的可见宽度。
+          element.cloneNode()	克隆元素。
+          element.compareDocumentPosition()	比较两个元素的文档位置。
+          element.contentEditable	设置或返回元素的文本方向。
+          element.dir	设置或返回元素的内容是否可编辑。
+          element.firstChild	返回元素的首个子。
+          element.getAttribute()	返回元素节点的指定属性值。
+          element.getAttributeNode()	返回指定的属性节点。
+          element.getElementsByTagName()	返回拥有指定标签名的所有子元素的集合。
+          element.getFeature()	返回实现了指定特性的 API 的某个对象。
+          element.getUserData()	返回关联元素上键的对象。
+          element.hasAttribute()	如果元素拥有指定属性，则返回true，否则返回 false。
+          element.hasAttributes()	如果元素拥有属性，则返回 true，否则返回 false。
+          element.hasChildNodes()	如果元素拥有子节点，则返回 true，否则 false。
+          element.id	设置或返回元素的 id。
+          element.innerHTML	设置或返回元素的内容。
+          element.insertBefore()	在指定的已有的子节点之前插入新节点。
+          element.isContentEditable	设置或返回元素的内容。
+          element.isDefaultNamespace()	如果指定的 namespaceURI 是默认的，则返回 true，否则返回 false。
+          element.isEqualNode()	检查两个元素是否相等。
+          element.isSameNode()	检查两个元素是否是相同的节点。
+          element.isSupported()	如果元素支持指定特性，则返回 true。
+          element.lang	设置或返回元素的语言代码。
+          element.lastChild	返回元素的最后一个子元素。
+          element.namespaceURI	返回元素的 namespace URI。
+          element.nextSibling	返回位于相同节点树层级的下一个节点。
+          element.nodeName	返回元素的名称。
+          element.nodeType	返回元素的节点类型。
+          element.nodeValue	设置或返回元素值。
+          element.normalize()	合并元素中相邻的文本节点，并移除空的文本节点。
+          element.offsetHeight	返回元素的高度。
+          element.offsetWidth	返回元素的宽度。
+          element.offsetLeft	返回元素的水平偏移位置。
+          element.offsetParent	返回元素的偏移容器。
+          element.offsetTop	返回元素的垂直偏移位置。
+          element.ownerDocument	返回元素的根元素（文档对象）。
+          element.parentNode	返回元素的父节点。
+          element.previousSibling	返回位于相同节点树层级的前一个元素。
+          element.removeAttribute()	从元素中移除指定属性。
+          element.removeAttributeNode()	移除指定的属性节点，并返回被移除的节点。
+          element.removeChild()	从元素中移除子节点。
+          element.replaceChild()	替换元素中的子节点。
+          element.scrollHeight	返回元素的整体高度。
+          element.scrollLeft	返回元素左边缘与视图之间的距离。
+          element.scrollTop	返回元素上边缘与视图之间的距离。
+          element.scrollWidth	返回元素的整体宽度。
+          element.setAttribute()	把指定属性设置或更改为指定值。
+          element.setAttributeNode()	设置或更改指定属性节点。
+          element.setIdAttribute()	
+          element.setIdAttributeNode()	
+          element.setUserData()	把对象关联到元素上的键。
+          element.style	设置或返回元素的 style 属性。
+          element.tabIndex	设置或返回元素的 tab 键控制次序。
+          element.tagName	返回元素的标签名。
+          element.textContent	设置或返回节点及其后代的文本内容。
+          element.title	设置或返回元素的 title 属性。
+          element.toString()	把元素转换为字符串。
+          nodelist.item()	返回 NodeList 中位于指定下标的节点。
+          nodelist.length	返回 NodeList 中的节点数。
+          Event 对象
+          Event 对象代表事件的状态，比如事件在其中发生的元素、键盘按键的状态、鼠标的位置、鼠标按钮的状态。
+          事件通常与函数结合使用，函数不会在事件发生前被执行！
+          事件句柄　(Event Handlers)
+          HTML 4.0 的新特性之一是能够使 HTML 事件触发浏览器中的行为，比如当用户点击某个 HTML 元素时启动一段 JavaScript。下面是一个属性列表，可将之插入 HTML 标签以定义事件的行为。
+          属性	此事件发生在何时...
+          onabort	图像的加载被中断。
+          onblur	元素失去焦点。
+          onchange	域的内容被改变。
+          onclick	当用户点击某个对象时调用的事件句柄。
+          ondblclick	当用户双击某个对象时调用的事件句柄。
+          onerror	在加载文档或图像时发生错误。
+          onfocus	元素获得焦点。
+          onkeydown	某个键盘按键被按下。
+          onkeypress	某个键盘按键被按下并松开。
+          onkeyup	某个键盘按键被松开。
+          onload	一张页面或一幅图像完成加载。
+          onmousedown	鼠标按钮被按下。
+          onmousemove	鼠标被移动。
+          onmouseout	鼠标从某元素移开。
+          onmouseover	鼠标移到某元素之上。
+          onmouseup	鼠标按键被松开。
+          onreset	重置按钮被点击。
+          onresize	窗口或框架被重新调整大小。
+          onselect	文本被选中。
+          onsubmit	确认按钮被点击。
+          onunload	用户退出页面。
+          鼠标 / 键盘属性
+          属性	描述
+          altKey	返回当事件被触发时，"ALT" 是否被按下。
+          button	返回当事件被触发时，哪个鼠标按钮被点击。
+          clientX	返回当事件被触发时，鼠标指针的水平坐标。
+          clientY	返回当事件被触发时，鼠标指针的垂直坐标。
+          ctrlKey	返回当事件被触发时，"CTRL" 键是否被按下。
+          metaKey	返回当事件被触发时，"meta" 键是否被按下。
+          relatedTarget	返回与事件的目标节点相关的节点。
+          screenX	返回当某个事件被触发时，鼠标指针的水平坐标。
+          screenY	返回当某个事件被触发时，鼠标指针的垂直坐标。
+          shiftKey	返回当事件被触发时，"SHIFT" 键是否被按下。
+          标准 Event 方法
+          下面列出了 2 级 DOM 事件标准定义的方法。IE 的事件模型不支持这些方法：
+          方法	描述
+          initEvent()	初始化新创建的 Event 对象的属性。
+          preventDefault()	通知浏览器不要执行与事件关联的默认动作。
+          stopPropagation()	不再派发事件。         
+          </p>
+      </div>
+    </article>

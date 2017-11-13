@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>博客</title>
+<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+<link rel="stylesheet" type="text/css" href="styles/main.css" />
+<script src="./js/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+<div id="body">
+  <div id="wrap">
+    <header>
+      <p><span>个人博客</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>face life smile be happy!</span></p>
+      <div class="switch"> <span>夜间模式</span><a class="switch-open">开</a><a class="switch-close active">关</a> </div>
+    </header>
+    <aside>
+      <ul>
+        <li id="li1">个人简介</li>
+        <li id="li2">前端知识</li>
+        <li id="li3">作品展示</li>
+        <li id="li4">文摘笔记</li>
+        <li id="li5">生活娱乐</li>
+      </ul>
+      <div id="introduce">
+        <p>姓名：诸葛建林</p>
+        <p>坐标：杭州</p>
+        <p>毕业于：浙江理工大学</p>
+        <p>星座：双鱼座</p>
+        <p>简介：有志者事竟成，苦心人天不负</P>
+      </div>
+    </aside>
+    <div>
+      <section id="section1" style="display:block">
+        <ul>
+          <li class="box">
+            <article class="article">
+              <div class="title"><a href="">个人简介</a></div>
+              <div class="content">
+                <p style="line-height: 1.5em;height: auto;overflow: visible"> 
+                    <b>自我评价: </b> <br>
+                    性格开朗，积极上进，态度诚恳，谦虚好学，乐于助人
+                    执行力强，认真负责，吃苦耐劳，
+                    具有良好的团队合作精神，坚持不懈的做好每项工作
+                    喜欢专研，热爱学习新鲜事物，敢于尝试，挑战自己，相信自己<br> 
+                    <b>个人能力：</b><br>
+                    我热爱编程，数学基础好，逻辑能力强
+                    1、掌握HTML,CSS,JavaScript基础知识，熟练使用vscode,sublime等开发工具进行web制作开发；对性能优化有基础的了解
+                    2、掌握jquery，了解vue框架，了解node.js
+                    3、理解并会使用git进行代码管理，理解并会使用webpack模块打包工具
+                    5、理解ajax,利用ajax交换数据并更新部分网页
+                    6、善于分析解决问题，热爱学习新技术，热爱团队合作<br>
+                    <img src="images/1.jpg"> <img src="images/2.jpg"> <img src="images/3.jpg">
+                    若一切都云烟成雨
+                    若生命如过场电影
+                    路灯下昏黄的剪影
+                    越走越漫长的林径
+                    街上落叶的秋季
+                    渐行渐远的我们</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="section2" style="display:none">
+        <ul>
+          <li class="box">
+            <article class="article">
+              <div class="title"><a href="">HTML常用样式</a></div>
+              <div class="more">全文</div>
+              <div class="content">
+                <p> 文本设置
+                  1、font-size: 字号大小 
+                  2、font-style: 字体格式
+                  3、font-weight: 字体粗细
+                  4、颜色属性color: 文本颜色
+                  注意使用网页安全色
+                  
+                  超链接设置
+                  text-decoration: 参数
+                  参数取值范围： 
+                  underline：为文字加下划线 
+                  overline：为文字加上划线 
+                  line-through：为文字加删除线 
+                  blink：使文字闪烁 
+                  none：不显示上述任何效果
+                  
+                  背景
+                  1、背景颜色
+                  background-color: 设置背景色
+                  2、背景图片
+                  background-image: url(URL)
+                  URL就是背景图片的存放路径，none表示无。
+                  3、背景图片重复
+                  background-repeat: 参数
+                  参数取值范围 ：
+                  no-repeat：不重复平铺背景图片
+                  repeat-x：使图片只在水平方向上平铺
+                  repeat-y：使图片只在垂直方向上平铺
+                  如果不指定背景图片重复属性，浏览器默认的是背景图片向水平和垂直两个方向平铺。
+                  4、背景图片固定
+                  background-attachment: 参数
+                  背景图片固定控制背景图片是否随网页的滚动而滚动。如果不设置背景图片固定属性，浏览器默认背景图片随网页的滚动而滚动。为了避免过于花哨的背景图片在滚动时转移浏览者的注意力，一般都设为固定。
+                  参数取值范围：
+                  fixed：网页滚动时，背景图片相对于浏览器的窗口而言，固定不动
+                  scroll：网页滚动时，背景图片相对于浏览器的窗口而言，一起滚动
+                  
+                  区块
+                  1、单词间距 
+                  word-spacing: 单词间距 
+                  2、字母间距 
+                  letter-spacing: 字母间距 3、文本对齐
+                  text-align: 参数
+                  参数的取值：
+                  left：左对齐
+                  right：右对齐
+                  center：居中对齐
+                  justify：相对左右两端对齐
+                  4、垂直对齐
+                  vertical-align: 参数
+                  top：顶对齐
+                  bottom：底对齐
+                  text-top：相对文本顶对齐
+                  text-bottom：相对文本底对齐
+                  baseline：基准线对齐
+                  middle：中心对齐
+                  sub：以下标的形式显示
+                  super：以上标的形式显示
+                  5、文本缩进
+                  text-indent: 缩进距离
+                  12px相当于一个文字距离 6、空格
+                  white-space: 参数
+                  参数取值范围： 
+                  normal 默认，空白会被浏览器忽略
+                  pre 保留空白
+                  nowrap 文本不换行
+                  7、显示样式 
+                  display: 参数 
+                  参数取值范围： 
+                  block：块级元素，在对象前后都换行 
+                  inline：在对象前后都不换行 
+                  list-item：在对象前后都换行，增加了项目符号 
+                  none：无显示
+                  方框
+                  1、height 高度
+                  2、width 宽度
+                  3、padding 内边距
+                  4、margin 外边距
+                  5、float（浮动）：可以让块级元素在一行中排列，例如横向菜单。 
+                  6、clear 清除浮动
+                  
+                  边框
+                  1、样式
+                  border style 参数
+                  边框样式的参数：
+                  none：无边框 dotted：边框为点线
+                  dashed：边框为长短线
+                  solid：边框为实线
+                  double：边框为双线
+                  2、宽度 border width 
+                  3、颜色 border color
+                  列表
+                  list-style-type 列表样式
+                  不同浏览器的列表符可能不相同，可能会影响到网页，所以网页中的列表大多都是由背景图片显示。
+                  控制用户界面的样式
+                  
+                  鼠标
+                  cursor：鼠标形状参数 
+                  CSS鼠标形状参数表： 
+                  鼠标形状：CSS代码
+                  style="cursor:hand" 　　　　　手形
+                  style="cursor:crosshair" 　　十字形
+                  style="cursor:text" 　　　　　文本形
+                  style="cursor:wait" 　　　　　沙漏形
+                  style="cursor:move" 　　　　十字箭头形：
+                  style="cursor:help" 　　　　　问号形
+                  style="cursor:e-resize" 　　　右箭头形
+                  style="cursor:n-resize" 　　　上箭头形
+                  style="cursor:nw-resize" 　　左上箭头形
+                  style="cursor:w-resize" 　　　左箭头形
+                  style="cursor:s-resize" 　　　下箭头形 
+                  style="cursor:se-resize" 　　右下箭头形 
+                  style="cursor:sw-resize" 　　左下箭头形 </p>
+              </div>
+            </article>
+          </li>
+          <li class="box">
+            <article class="article">
+              <div class="title"><a href="">CSS定位</a></div>
+              <div class="more">全文</div>
+              <div class="content">
+                <p> CSS 定位 (Positioning) 属性允许你对元素进行定位。
+                  CSS 定位和浮动
+                  CSS 为定位和浮动提供了一些属性，利用这些属性，可以建立列式布局，将布局的一部分与另一部分重叠，还可以完成多年来通常需要使用多个表格才能完成的任务。
+                  定位的基本思想很简单，它允许你定义元素框相对于其正常位置应该出现的位置，或者相对于父元素、另一个元素甚至浏览器窗口本身的位置。显然，这个功能非常强大，也很让人吃惊。要知道，用户代理对 CSS2 中定位的支持远胜于对其它方面的支持，对此不应感到奇怪。
+                  另一方面，CSS1 中首次提出了浮动，它以 Netscape 在 Web 发展初期增加的一个功能为基础。浮动不完全是定位，不过，它当然也不是正常流布局。我们会在后面的章节中明确浮动的含义。
+                  一切皆为框
+                  div、h1 或 p 元素常常被称为块级元素。这意味着这些元素显示为一块内容，即“块框”。与之相反，span 和 strong 等元素称为“行内元素”，这是因为它们的内容显示在行中，即“行内框”。
+                  您可以使用 display 属性改变生成的框的类型。这意味着，通过将 display 属性设置为 block，可以让行内元素（比如 a元素）表现得像块级元素一样。还可以通过把 display 设置为 none，让生成的元素根本没有框。这样的话，该框及其所有内容就不再显示，不占用文档中的空间。
+                  但是在一种情况下，即使没有进行显式定义，也会创建块级元素。这种情况发生在把一些文本添加到一个块级元素（比如 div）的开头。即使没有把这些文本定义为段落，它也会被当作段落对待：
+                  
+                  在这种情况下，这个框称为无名块框，因为它不与专门定义的元素相关联。
+                  块级元素的文本行也会发生类似的情况。假设有一个包含三行文本的段落。每行文本形成一个无名框。无法直接对无名块或行框应用样式，因为没有可以应用样式的地方（注意，行框和行内框是两个概念）。但是，这有助于理解在屏幕上看到的所有东西都形成某种框。
+                  CSS 定位机制
+                  CSS 有三种基本的定位机制：普通流、浮动和绝对定位。
+                  除非专门指定，否则所有框都在普通流中定位。也就是说，普通流中的元素的位置由元素在 (X)HTML 中的位置决定。
+                  块级框从上到下一个接一个地排列，框之间的垂直距离是由框的垂直外边距计算出来。
+                  行内框在一行中水平布置。可以使用水平内边距、边框和外边距调整它们的间距。但是，垂直内边距、边框和外边距不影响行内框的高度。由一行形成的水平框称为行框（Line Box），行框的高度总是足以容纳它包含的所有行内框。不过，设置行高可以增加这个框的高度。
+                  在下面的章节，我们会为您详细讲解相对定位、绝对定位和浮动。
+                  CSS position 属性
+                  通过使用 position 属性，我们可以选择 4 种不同类型的定位，这会影响元素框生成的方式。
+                  position 属性值的含义：
+                  static
+                  元素框正常生成。块级元素生成一个矩形框，作为文档流的一部分，行内元素则会创建一个或多个行框，置于其父元素中。
+                  relative
+                  元素框偏移某个距离。元素仍保持其未定位前的形状，它原本所占的空间仍保留。
+                  absolute
+                  元素框从文档流完全删除，并相对于其包含块定位。包含块可能是文档中的另一个元素或者是初始包含块。元素原先在正常文档流中所占的空间会关闭，就好像元素原来不存在一样。元素定位后生成一个块级框，而不论原来它在正常流中生成何种类型的框。
+                  fixed
+                  元素框的表现类似于将 position 设置为 absolute，不过其包含块是视窗本身。
+                  提示：相对定位实际上被看作普通流定位模型的一部分，因为元素的位置相对于它在普通流中的位置。 </p>
+              </div>
+            </article>
+          </li>
+          <li class="box">
+            <article class="article">
+              <div class="title"><a href="">JS</a></div>
+              <div class="more">全文</div>
+              <div class="content">
+                <p> 1、ECMAScript数据类型有5种基本数据类型：未定义Undefined,空对象Null,布尔Boolean,数字Number,字符串String
+                  和一种复杂数据类型：对象Object
+                  2、typeof检测给定变量的数据类型，可能返回以下6种值：
+                  undefined未定义
+                  boolean布尔
+                  string字符串
+                  number数字
+                  object对象：数组，对象，null
+                  function函数
+                  3、全等和相等运算符的区别是，全等不转换类型，而相等进行类型转换，比如null与undefined相等但是不全等
+                  4、window.onload:文档全部加载完成
+                  DOMContentLoaded:DOM结构加载完成，无需等待图片样式表加载完成
+                  5、用JS创建10个a标签，点击的时候弹出对应的序号
+                  这个题目需要用到事件和闭包
+                  6、实现数组的随机排序:利用随机数
+                  7、JS模块化，require.js
+                  
+                  
+                  
+                  
+                  变量类型和计算
+                  变量类型：值类型和引用类型
+                  基本类型：Undefined,Null,Boolean,Bumber,String
+                  引用类型：对象，数组，函数
+                  变量计算-强制类型转换：
+                  字符串拼接
+                  ==：null == undefined,慎用双等号
+                  if语句
+                  逻辑运算：两个非！!判断一个变量会被当做true还是false
+                  何时使用===和==：
+                  If(obj.a==null){这里相当于obj.a===null||obj.a===undefined}
+                  其他地方都要用===
+                  JS中的内置函数：
+                  Object,Array,Boolean,Number,String,Function,Date,RegExp,Error
+                  JS按存储方式分为值类型和引用类型
+                  JSON是一个JS的内置对象
+                  JSON.stringify把对象转换为字符串
+                  JSON.parse把字符串转换为对象
+                  
+                  
+                  
+                  
+                  原型和原型链
+                  如何判断一个变量是数组类型，instanceof
+                  写一个原型链继承的例子
+                  function Fn1(){
+                  this.method1=function(){
+                  alert("a")
+                  }
+                  }
+                  function Fn2(){
+                  this.method2=function(){
+                  alert("b")
+                  }
+                  }
+                  
+                  // Fn2的原型是Fn1的实例
+                  Fn2.prototype = new Fn1();
+                  // 创建Fn2的实例
+                  var f =new Fn2();
+                  f.method2();
+                  f.method1();
+                  描述new一个对象的过程
+                  1创建一个新对象
+                  2this指向这个对象
+                  3执行代码，即对this赋值
+                  4返回this
+                  知识点
+                  构造函数，原型规则，原型链，instanceof
+                  构造函数
+                  Function Foo(name,age){
+                  this.name=name;
+                  this.age=age
+                  }
+                  
+                  创建实例
+                  var f =new Foo(“name”,20)
+                  扩展
+                  var a={} 相当于var a = new Object()
+                  var a=[] 相当于var a = new Array()
+                  Function f() 相当于var f = new Function()
+                  原型规则
+                  1所有引用类型（数组，对象，函数）都具有对象特性，即可自由扩展属性
+                  2所有引用类型（数组，对象，函数）都具有一个__proto__属性（隐式原型），属性值是一个普通对象
+                  3所有函数都具有一个prototype属性（显式原型），属性值是一个普通对象
+                  4所有引用类型（数组，对象，函数）,__proto__属性指向它的构造函数的prototype属性值。Var obj={};obj.__proto__===Object.prototype
+                  5当试图得到一个引用类型的某个属性时，如果这个对象本身没有这个属性，那么会去它的__proto__（它的构造函数的prototype）中寻找。
+                  f.hasOwnProperty(item)判断item是否是f实例的属性
+                  // 构造函数
+                  function Foo(name,age){
+                  this.name =name;
+                  }
+                  Foo.prototype.alertName = function(){
+                  alert(this.name)
+                  } // 创建实例
+                  var f = new Foo('zhangsan')
+                  f.printName = function(){
+                  console.log(this.name)
+                  }
+                  // 测试
+                  f.printName();//zhangsan
+                  f.alertName();//zhangsan
+                  
+                  f.__proto__.toString();//[object Object]
+                  //instanceof用于判断引用类型属于哪个构造函数
+                  f instanceof Foo;//true
+                  f instanceof Object;//true
+                  var item;
+                  for (item in f){
+                  console.log(item);
+                  /*if(f.hasOwnPropety){
+                  console.log(item);
+                  }*/
+                  }
+                  //判断一个变量是数组类型
+                  var arr = [];
+                  arr instanceof Array;//true
+                  typeof arr//object,typeof是无法判断是否是数组
+                  作用域和闭包
+                  题目
+                  1对变量提升的理解:函数声明变量提升
+                  2说明this几种不同的使用场景：构造函数，对象属性，普通函数，call,apply,bind
+                  3创建10个a标签，点击的时候弹出对应的序号;自执行函数
+                  for (var i = 0; i &lt; 10; i++) {
+                  (function (i) {
+                  var a = document.createElement("a");
+                  a.innerHTML = i+"&lt;br/&gt;";
+                  document.body.appendChild(a);
+                  a.addEventListener("click",function(){
+                  alert(i);
+                  })
+                  })(i)
+                  }
+                  4如何理解作用域:自由变量，作用域链，闭包两个使用场景
+                  5实际开发中闭包的应用：封装变量，收敛权限
+                  function isFirstLoad(){
+                  var _list = [];//变量前面带有_用来表示私有变量
+                  return function(id){
+                  if(_list.indexOf(id)&gt;=0){
+                  return false
+                  }else{
+                  _list.push(id);
+                  return true;
+                  }
+                  }   
+                  }
+                  var firstLoad = isFirstLoad();
+                  alert(firstLoad(10));//true
+                  alert(firstLoad(10));//false
+                  alert(firstLoad(20));//true
+                  alert(firstLoad(20));//false
+                  
+                  //在isFirstLoad函数外面，根本无法改变_list的值
+                  把接口开放出去，但是内部变量不允许更改
+                  知识点
+                  执行上下文，this，作用域，作用域链，闭包
+                  执行上下文
+                  范围：一段&lt;script&gt;或者一个函数
+                  全局：变量定义，函数声明，一段&lt;script&gt;
+                  函数：变量定义，函数声明，this，arguments，函数
+                  this要在执行时才能确认值，定义时无法确认
+                  
+                  var a ={
+                  name:"A",
+                  fn :function(){
+                  console.log(this.name)
+                  }
+                  }
+                  a.fn();//A
+                  // this===a;
+                  a.fn.call({name:"B"})//B
+                  // this==={name:"B"}
+                  var fn1=a.fn;
+                  fn1();//undefined
+                  // this===window
+                  this
+                  作为构造函数执行
+                  function Foo(name,age){
+                  this.name =name;
+                  }
+                  作为对象属性执行
+                  var a ={
+                  name:"A",
+                  fn :function(){
+                  console.log(this.name)
+                  }}
+                  a.fn();//A
+                  作为普通函数执行
+                  function fn(){
+                  console.log(this)//this===window
+                  }
+                  fn();
+                  Call apply bind
+                  function fn1(){
+                  console.log(this)
+                  }
+                  fn1.call({X:100},"name")//输出{X:100}
+                  var fn2=function (){
+                  console.log(this)
+                  }.bind({x:200})//函数表达式才可以使用bind
+                  fn2();//输出{X:200}
+                  
+                  作用域
+                  JS没有块级作用域，尽量不要在块里面声明变量
+                  只有全局和函数作用域
+                  作用域
+                  var a=100;
+                  function fn(){
+                  var a =200;
+                  console.log(a);
+                  }
+                  fn();
+                  console.log(a);
+                  作用域链
+                  var a=100;
+                  function fn(){
+                  var b=200;
+                  // 当前作用域没有定义的变量，就是自由变量
+                  console.log(a)
+                  console.log(b)
+                  }
+                  fn();
+                  闭包：有权访问另一个函数作用域中的变量的函数
+                  1函数作为返回值
+                  function f1(){
+                  var a=100;
+                  return function(){
+                  console.log(a);//a是自由变量，去父级作用域去找
+                  // 返回一个函数，函数作为返回值
+                  }
+                  }
+                  var f=f1();
+                  var a=200;//这里a是全局作用域里的a
+                  f();//输出100
+                  2函数作为参数传递（函数传递到另一个函数中执行）
+                  function f1() {
+                  var a = 100;
+                  return function () {
+                  console.log(a);//a是自由变量，去父级作用域去找
+                  // 返回一个函数，函数作为返回值
+                  }
+                  }
+                  var f = f1();
+                  function f2(fn) {
+                  var a = 200; fn();
+                  }
+                  f2(f);
+                  
+                  
+                  
+                  
+                  异步和单线程
+                  同步和异步的区别
+                  一个关于setTimeout的笔试题
+                  前端使用异步的场景
+                  异步：没有阻塞程序的运行
+                  console.log(100)
+                  setTimeout(function(){
+                  console.log(200) 
+                  },1000)
+                  console.log(300)
+                  // 执行顺序100,300,1秒后200 同步：阻塞程序的运行
+                  console.log(100)
+                  alert(200)//弹出对话框，不确认不执行下面程序
+                  console.log(300)
+                  何时需要异步
+                  1在可能发生等待的情况
+                  2在等待过程中不能像alert一样阻塞程序运行
+                  等待的情况需要异步，使用异步的场景
+                  1定时任务：setTimeout,setInverval
+                  2网络请求：ajax请求，动态&lt;img&gt;加载
+                  3事件绑定
+                  单线程：同时只能执行一个程序，不能一块执行
+                  console.log(100)
+                  setTimeout(function(){
+                  console.log(200) 
+                  })
+                  console.log(300)
+                  // 执行顺序100,300,200
+                  遇到异步程序先把它放一边等着，等所有程序执行完成，再执行异步程序
+                  题目
+                  获取2017-06-10格式的日期
+                  function formatDate(dt){
+                  if(!dt){
+                  var dt = new Date();
+                  }
+                  
+                  var year=dt.getFullYear();
+                  var month=dt.getMonth()+1;
+                  var date=dt.getDate();
+                  if(month&lt;10){
+                  month="0"+month;
+                  }
+                  if(date&lt;10){
+                  date="0"+date;
+                  }
+                  return year+"-"+month+"-"+date;
+                  }
+                  alert(formatDate(new Date()));
+                  获取随机数，要求是长度一致的字符串格式
+                  var a = Math.random();
+                  a = a + '0000000000';
+                  a = a.slice(0,10)//加10个0，截取10位才不会报错
+                  alert(a);
+                  
+                  数组
+                  forEach遍历所有元素
+                  var arr1 = ['a','b','c','d'];
+                  arr1.forEach(function(item,index){
+                  console.log(index,item);
+                  })
+                  Every判断所有元素是否符合条件
+                  var arr2 = [1,2,3,4];
+                  var result2 = arr2.every(function(item,index){
+                  if(item&lt;5)
+                  {return true}})
+                  console.log(result2);
+                  Some判断是否至少有一个符合条件
+                  var arr3= [1,2,3,4];
+                  var result3 = arr3.some(function(item,index){
+                  if(item&lt;2)
+                  {return true}
+                  })
+                  console.log(result3);
+                  Sort排序
+                  var arr4 = [1,7,5,3,10,8,55];
+                  var result4 = arr4.sort(function(a,b){  
+                  return a - b;
+                  })
+                  console.log(result4);
+                  Map对数组重新组装，生成新数组
+                  var arr5 = [1,7,5,3,10,8,55];
+                  var result5 = arr5.map(function(item,index){    
+                  return '&lt;b&gt;'+item+"&lt;/b&gt;"
+                  })
+                  console.log(result5);
+                  Filter过滤符合条件的元素
+                  var arr6= [1,7,5,3,10,8,55];
+                  var result6 = arr6.filter(function(item,index){
+                  if(item&gt;5)
+                  {return true}
+                  })
+                  console.log(result6);   
+                  }
+                  对象API
+                  var obj = {
+                  x:100,
+                  y:200,
+                  z:300
+                  }
+                  var key;
+                  for(key in obj){
+                  if(obj.hasOwnProperty(key)){
+                  console.log(key,obj[key])
+                  }
+                  
+                  写一个能遍历对象和数组的通用forEach函数
+                  // 遍历数组和对象的函数
+                  function foreach(obj,fn) {
+                  var key;
+                  if (obj instanceof Array) {
+                  obj.forEach(function (item, index) {
+                  fn(index, item)
+                  })
+                  }else{
+                  for (key in obj){
+                  fn(key,obj[key])
+                  }
+                  }
+                  }
+                  var arr1 = ['a', 'b', 'c', 'd'];
+                  foreach(arr1,function (item, index) {
+                  console.log(index, item);
+                  })
+                  var obj = {
+                  x: 100,
+                  y: 200,
+                  z: 300
+                  }
+                  foreach(obj,function(key,val){
+                  console.log(key,val);
+                  }) JS-WEB-API
+                  JS基础知识：ECMA262标准
+                  JS-Web-API：W3C标准
+                  W3C标准中关于JS的规定有：
+                  DOM操作,BOM操作，事件绑定，ajax请求，存储
+                  JS内置的全局函数和对象：window document navigator
+                  DOM是树形数据结构，将HTML结构化浏览器能识别并且JS可操作的模型
+                  DOM操作常用API
+                  DOM节点的attribute和property有何区别
+                  Property属性：JS对象的基本属性，元素的style css nodeType nodeName
+                  Attribute属性：html标签的属性
+                  getAttribute,setAttribute
+                  选择符API
+                  querySelector()接受一个CSS选择符，返回匹配的第一个元素
+                  querySelcetorAll()接受一个CSS选择符，返回匹配的一个NodeList
+                  DOM结构操作：
+                  新增节点：creatElement appendChild 获取父元素和子元素：parentElement,childNodes
+                  删除节点：removeChild
+                  BOM操作browser object model
+                  如何检测浏览器的类型
+                  解析url各部分
+                  Navigator浏览器navigator.userAgent
+                  Screen:screen.width screen.height
+                  Location：href protocol host pathname search hash
+                  History
+                  事件
+                  编写一个通用的事件函数
+                  描述事件冒泡流程
+                  对一个无限下拉加载图片的页面，如何给每个图片绑定事件
+                  通用事件绑定
+                  function bindEvent(elem,type,selector,fn){
+                  if(fn==null){
+                  fn = selector;
+                  selector = null;
+                  }
+                  elem.addEventListener(type,function(e){
+                  var target;
+                  if(selector){
+                  //代理
+                  target = e.target;
+                  if(target.matches(selector)){//matches意思是DOM节点是不是和选择器匹配的
+                  fn.call(target,e)
+                  }
+                  }else{//不是代理
+                  fn(e)
+                  }
+                  })
+                  }
+                  事件冒泡
+                  &lt;body&gt;
+                  &lt;div id="div1"&gt;
+                  &lt;p id="p1"&gt;激活&lt;/p&gt;
+                  &lt;p id="p2"&gt;取消&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div id="div2"&gt;
+                  &lt;p id="p3"&gt;取消&lt;/p&gt;
+                  &lt;p id="p4"&gt;取消&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;/body&gt;
+                  var p1 = document.getElementById("p1");
+                  bindEvent(p1,"click",function(e){
+                  e.stopPropagation();//阻止事件冒泡
+                  alert(p1.innerHTML);
+                  })
+                  
+                  var body=document.body;
+                  bindEvent(body,"click",function(e){
+                  alert("取消");
+                  })
+                  代理
+                  &lt;div id="div3"&gt;
+                  &lt;a href="#"&gt;1&lt;/a&gt;
+                  &lt;a href="#"&gt;2&lt;/a&gt;
+                  &lt;a href="#"&gt;3&lt;/a&gt;
+                  &lt;a href="#"&gt;4&lt;/a&gt;
+                  &lt;a href="#"&gt;5&lt;/a&gt;
+                  &lt;p&gt;6&lt;/p&gt;
+                  &lt;p&gt;7&lt;/p&gt;
+                  &lt;!--a标签的个数会增加--&gt;
+                  &lt;/div&gt;
+                  var div3 = document.getElementById("div3");    
+                  bindEvent(div3,"click","a",function(e){
+                  e.preventDefault();//取消a标签默认行为
+                  e.stopPropagation();//阻止事件冒泡
+                  alert(this.innerHTML);
+                  })
+                  
+                  var div3 = document.getElementById("div3"); 
+                  bindEvent(div3,"click",function(e){
+                  e.preventDefault();//取消a标签默认行为
+                  e.stopPropagation();//阻止事件冒泡
+                  var target = e.target;//取得事件触发的元素
+                  if(target.nodeName==="A"){
+                  alert(123);
+                  }
+                  })
+                  
+                  AJAX即“Asynchronous Javascript And XML”（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术
+                  //Ajax实现原理  
+                  var xhr = new XMLHttpRequest();
+                  xhr.open("GET", url, true)/*true是异步,false是同步
+                  与 POST 相比，GET 更简单也更快，并且在大部分情况下都能用。
+                  然而，在以下情况中，请使用 POST 请求：
+                  1 无法使用缓存文件（更新服务器上的文件或数据库）
+                  2 向服务器发送大量数据（POST 没有数据量限制）
+                  3 发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠*/
+                  
+                  xhr.onreadystatechange = function(){//
+                  if(xhr.readyState==4){//readyState状态码4，响应内容解析完成可以在客户端调用了
+                  if(xhr.status == 200){//status：2XX表示成功处理请求，3XX需要重定向，浏览器直接跳转，4XX客户端请求错误，5XX服务端错误
+                  alert(xhr.responseText)//服务端返回的内容
+                  }
+                  }
+                  }
+                  xhr.send(null);
+                  跨域 JSONP
+                  浏览器有同源策略，不允许ajax访问其他域的接口
+                  跨域条件：协议、域名、端口，有一个不同就算跨域
+                  可以跨域的三个标签：img，link，script
+                  &lt;img&gt;用于打点统计，统计网站可能是其他域
+                  &lt;link&gt;&lt;script&gt;都可以使用CDN，CDN是其他域
+                  &lt;script&gt;可以用于JSONP
+                  所有跨域请求都必须经过信息提供方的允许
+                  JSONP实现原理：服务器可以根据请求，动态生成一个文件，返回
+                  &lt;!--将返回callback,script可以跨域访问，JSONP--&gt;
+                  &lt;script src="http://coding.m.imooc.com/api.js"&gt;&lt;/script&gt;
+                  &lt;script type="text/javascript"&gt;
+                  window.callback = function(data){
+                  //这是我们跨域得到的信息
+                  console.log(data)
+                  }
+                  &lt;/script&gt;
+                  另一种解决跨域的解决方法，服务器端设置http header
+                  存储
+                  请描述一下cookie,sessionStorage,localStorage的区别
+                  cookie本身用于客户端和服务器端通信，但是它有本地存储的功能
+                  使用document.cookie=...获取和修改
+                  cookie用于存储的缺点：
+                  存储量小，只有4KB
+                  所有http请求都带着，影响资源获取效率
+                  API简单，需要封装才能用document.cookie
+                  locationStorsge和sessionStorage
+                  HTML5专门为存储而设计，最大容量5M
+                  API简单易用：
+                  locationStorage.setItem(key,value)
+                  locationStorage.getItem(key)
+                  
+                  
+                  
+                  
+                  
+                  
+                  开发环境
+                  1、IDE：sublime, vscode，插件
+                  2、Git代码版本管理，多人协作开发
+                  网络git服务器：国内coding.net 国外github.com
+                  一般公司代码非开源，都有自己的git服务器
+                  Git常用命令
+                  mkdir project
+                  cd project
+                  git init
+                  echo "# project" &gt;&gt; README.md
+                  git add README.md
+                  git commit -m "first commit"
+                  git remote add origin https://git.coding.net/zgjl/project.git
+                  git push -u origin master
+                  3、JS模块化，拼装:
+                  AMD 异步模块定义，全局define函数，全局require函数，依赖JS会自动异步加载
+                  commonJS：nodeJS模块化规范，前端开发依赖的插件和库，都可以从npm中获取，构建工具的高度自动化，使得使用npm的成本非常低，同步加载JS，因为nodeJS是服务器语言不需要异步,需要构建工具支持
+                  AMD和commomJS的使用场景：
+                  需要异步加载使用AMD
+                  使用NPM之后使用commomJS
+                  4、构建工具
+                  webpack功能强大
+                  打开命令窗口
+                  node -v
+                  npm -v
+                  npm install http-server -g
+                  http-server
+                  Starting up http-server, serving ./
+                  Available on:
+                  http://192.168.1.6:8080
+                  http://127.0.0.1:8080
+                  npm init
+                  package name: (webpack-test)
+                  version: (1.0.0)
+                  git repository:
+                  keywords:
+                  license: (ISC)
+                  About to write to E:\前端开发\webpack\package.json:
+                  {
+                  "name": "webpack-test",
+                  "version": "1.0.0",
+                  "description": "webpack test",
+                  "main": "server.js",
+                  "scripts": {
+                  "test": "echo \"Error: no test specified\" && exit 1",
+                  "start": "webpack"
+                  },
+                  "author": "zgjl",
+                  "license": "ISC",
+                  "devDependencies": {
+                  "webpack": "^3.6.0"
+                  },
+                  "dependencies": {
+                  "jquery": "^3.2.1"
+                  }
+                  }
+                  生成package.json文件
+                  安装webpack,开发环境
+                  npm install webpack --save-dev
+                  安装jquery，运行环境
+                  npm install jquery --save
+                  卸载npm uninstall
+                  5、上线回滚流程
+                  上线流程要点：
+                  将测试完成的代码提交到版本库的master分支
+                  将当前服务器的代码全部打包并记录版本号，备份
+                  将master分支的代码提交覆盖(覆盖就是上线)到线上服务器，生成新的版本号
+                  回滚流程要点：
+                  将当前服务器的代码打包并记录版本号，备份
+                  将备份的上一个版本号解压，覆盖到线上的服务器，并生成新的版本号
+                  linux基本命令：假设js文件夹下有个jquery.js文件
+                  mkdir js创建新文件夹js
+                  rm -rf js删除文件夹js
+                  ls当前文件夹目录
+                  ls -R当前文件夹下所有文件（注意是大写的R）
+                  ll当前文件夹信息
+                  cd js 进入js文件夹
+                  pwd 当前文件目录地址
+                  cd .. 返回上级目录 
+                  cp jquery.js a.js拷贝jquery.js到a.js
+                  cat jquery.js 查看jquery.js 文件
+                  head jquery.js 查看jquery.js 文件头部
+                  tail jquery.js 查看jquery.js 文件尾部
+                  grep  “jquery” jquery.js 查找jquery.js 文件内jquery字符
+                  运行环境
+                  页面加载过程：
+                  加载资源的形式：加载html;加载html的静态资源（脚本，样式，图片）
+                  输入URL，加载一个资源的过程：
+                  1浏览器根据DNS服务器得到域名的IP地址
+                  2向这个IP的机器发送http请求
+                  3服务器收到、处理并返回http请求
+                  4浏览器得到返回的内容
+                  浏览器渲染页面的过程：
+                  1根据HTML结构生成DOM树
+                  2根据CSS生成CSSOM
+                  3将DOM和CSSOM整合成RenderTree渲染树
+                  4浏览器根据渲染树开始渲染和展示 5遇到&lt;script&gt;，会执行并阻塞渲染（因为js有权利改变dom结构内容）
+                  css放在head中，js放在body最下面
+                  Window.onload:全部资源加载完
+                  document.DOMContentLoaded：DOM渲染完成，图片视频可能还没加载完成
+                  当初始HTML文档已完全加载和解析时，将触发DOMContentLoaded事件，而无需等待样式表，图像和子框架完成加载。
+                  性能优化
+                  原则多使用内存、缓存，减少CPU计算，减少网络
+                  加载页面和静态资源
+                  页面渲染
+                  加载资源优化：
+                  1静态资源的合并压缩
+                  2静态资源缓存
+                  3使用cdn让资源加载更快，cdn不同区域的网络优化，从最近的服务器加载
+                  4使用ssr后端渲染，数据直接输出到html中
+                  渲染优化
+                  CSS放前面，js放后面
+                  懒加载（图片懒加载，下拉加载更多）
+                  减少DOM查询，对DOM查询做缓存
+                  减少DOM操作，多个操作尽量合并在一起
+                  事件节流
+                  尽早执行操作如DOMContentLoaded
+                  安全性
+                  XSS和XSRF一般后端要求 </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="loadhtml2">加载更多</div>
+      </section>
+      <section id="section3" style="display:none">
+        <ul>
+          <li class="box">
+            <article class="article" >
+              <div class="title"><a href="">JS效果</a></div>
+              <!-- <div class="more">全文</div> -->
+              <div class="content">
+                <p><a href="./demo/滚动/index.html" target="_black">点击链接:滚动</a><br>
+                   <a href="./demo/瀑布流/index.html" target="_black">点击链接:瀑布流</a>
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="box">
+              <article class="article" >
+                <div class="title"><a href="">首页制作</a></div>
+                <!-- <div class="more">全文</div> -->
+                <div class="content">
+                  <p><a href="./demo/home/index.html" target="_black">点击链接:站酷首页</a><br> 
+                    1、使用HTML构建网页结构，使用CSS给网页添加样式
+                    2、使用JavaSript,jquery实现网页交互效果
+                    3、使用ajax实现更新页面图片数据效果
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="box">
+                <article class="article" >
+                  <div class="title"><a href="">vue案例</a></div>
+                  <!-- <div class="more">全文</div> -->
+                  <div class="content">
+                    <p><a href="./demo/cart/index.html" target="_black">点击链接:购物车</a><br> 
+                      使用vue框架制作的购物车
+                      1、通过vue-resource获取json数据
+                      2、通过vue的指令v-for,v-model绑定的数据
+                      3、通过vue-on,v-bind绑定方法，实现金额的联动
+                    </p>
+                  </div>
+                </article>
+              </li>
+        </ul>
+        <!-- <div class="loadhtml3">加载更多</div></section> -->
+      </section>
+      <section id="section4" style="display:none">
+        <ul>
+            <ul>
+                <li class="box">
+                  <article class="article" >
+                    <div class="title"><a href="">《当我开始爱自己》卓别林</a></div>
+                    <div class="more">全文</div>
+                    <div class="content">
+                      <p> 当我开始爱自己，
+                        我不再渴求不同的人生，
+                        我知道任何发生在我身边的事情，
+                        都是对我成长的邀请。
+                        如今，我称之为
+                        『成熟』。
+                        
+                        当我开始真正爱自己，
+                        我才明白，我其实一直都在正确的时间，
+                        正确的地方，发生的一切都恰如其分。
+                        由此我得以平静。
+                        今天我明白了，这叫做
+                        『自信』。
+                        
+                        当我开始真正爱自己，
+                        我不再牺牲自己的自由时间，
+                        不再去勾画什么宏伟的明天。
+                        今天我只做有趣和快乐的事，
+                        做自己热爱，让心欢喜的事，
+                        用我的方式，以我的韵律。
+                        今天我明白了，这叫做
+                        『单纯』。
+                        
+                        当我开始真正爱自己，
+                        我开始远离一切不健康的东西。
+                        不论是饮食和人物，还是事情和环境，
+                        我远离一切让我远离本真的东西。
+                        从前我把这叫做“追求健康的自私自利”，
+                        但今天我明白了，这是
+                        『自爱』。
+                        
+                        当我开始真正爱自己，
+                        我不再总想着要永远正确，不犯错误。
+                        我今天明白了，这叫做
+                        『谦逊』。
+                        
+                        当我开始真正爱自己，
+                        我不再继续沉溺于过去，
+                        也不再为明天而忧虑，
+                        现在我只活在一切正在发生的当下，
+                        今天，我活在此时此地，
+                        如此日复一日。这就叫
+                        『完美』。
+                        
+                        当我开始真正爱自己，
+                        我明白，我的思虑让我变得贫乏和病态，
+                        但当我唤起了心灵的力量，
+                        理智就变成了一个重要的伙伴， 这种组合我称之为，
+                        『心的智慧』。
+                        
+                        我们无须再害怕自己和他人的分歧，矛盾和问题，
+                        因为即使星星有时也会碰在一起，
+                        形成新的世界，
+                        今天我明白，这就是『生命』！
+                        
+                        ——《当我开始爱自己》卓别林</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="box">
+                  <article class="article">
+                    <div class="title">每个人都会过上与自己能力相匹配的日子</div>
+                    <div class="more">全文</div>
+                    <div class="content">
+                      <p> 生活：
+                        
+                        我们习惯旁观那些充满悲欢离合的故事，只是因为不用经历自己的人生坎坷。——德鲁伊
+                        梦想是个柔软的词，说出来就显得矫情。但只有相信，才能抵抗现实的坚硬。
+                        通情达理、性格随和、胸怀开朗的老年人，都会觉得晚年很好过；而性情乖戾、脾气不好的人，无论什么年纪，都会觉得日子不好过。
+                        树不可长得太快。一年生当柴，三年五年生当桌椅，十年百年的才有可能成为栋梁。——毕淑敏
+                        “如何才算高品质生活？”“看见周围的任何东西都不会羡慕嫉妒恨的时候。”
+                        每个人都会过上与自己能力相匹配的日子，人生最大的痛苦，莫过于奢望远超过能力。
+                        眼睛为她下着雨，心却为她打着伞，这就是爱情。纵然伤心，也不要愁眉不展，因为你不知是谁会爱上你的笑容。我的心是旷野的鸟，在你的眼睛里找到了它的天空。——泰戈尔
+                        人们总是希望改变一切，可同时又希望一切如故。——保罗·柯艾略《魔鬼与普里姆小姐》
+                        你才25岁，你可以成为任何你想成为的人。——《步履不停》
+                        少年听雨歌楼上。红烛昏罗帐。壮年听雨客舟中。江阔云低、断雁叫西风。 而今听雨僧庐下。鬓已星星也。悲欢离合总无情。一任阶前、点滴到天明。——蒋捷
+                        情感：
+                        
+                        真正的爱需要同时具备四个因素：关爱（care）、责任感（responsibility）、尊重（respect）和了解（knowledge）。
+                        一别之后，二地相悬。虽说是三四月，谁又知五六年。七弦琴无心弹，八行书无可传，九连环从中折断，十里长亭望眼欲穿。百思想，千系念，万般无奈把郎怨。——卓文君
+                        婚姻，是另一段人生的开始，是与原生家庭的分离，是承担责任的开始，是独立的象征，需要两个心智成熟的人，一起面对婚姻生活里的起起落落，悲欢喜乐。如果其中一人没有断奶，又怎能担负得起属于自己的那份责任呢？
+                        婚姻生活犹如长期的对话。当你要迈进婚姻生活时，一定要先这样反问自己：你是否能和这位女子在白头偕老时，仍然能够谈笑风生？婚姻生活的其余一切，都是短暂的，在一起的大部分时光，都是在对话中度过。——尼采
+                        女人嫁错人和一辈子不嫁人哪个更可怕？嫁错人更可怕，不嫁人顶多孤独一辈子，嫁错人一辈子生气。如果嫁对了人，可以相濡以沫。一旦嫁错人，就会老无所依。
+                        女人无论什么时候，都要嫁给爱情、人品，而不是房子、车子，千万不要因为面子而草率结婚。——朱门大叔
+                        多少人爱你美好的时光，迷恋你的美丽，假意或真情，只有一个人爱你圣洁的灵魂，还爱你脸上岁月的皱纹。
+                        幸福的婚姻只有一种：与一个值得爱的人相爱。不幸的婚姻有两种：我不值得他爱；他不值得我爱。
+                        没想法的人，是把人生交由命运的骰子，掷到几点数几点，命运还老掷出十三点。经常听人抱怨随意的婚姻毁了自己。我都在心里回一句，婚姻都可以随意，就没资格抱怨吧？这就像在高速公路上闭眼随意开车，出事是必然的。
+                        被拒绝，被分手，希望前任倒霉，以证明其错过自己是错误。这是正常的人性，是自尊的曲折体现，没什么大不了的，就算它是一个比较“坏”的想法，也不要否认它，不然陷入自我欺骗，就更麻烦了。它更需要“有节制”。少关注，甚至不关注对方的消息，这就是一种节制，这才能不让恶念放大，也让自己更愉快，坚持个把月，自己也就放下了。
+                        智慧：
+                        
+                        圣劳伦斯教堂里有这以一句话：“痛苦来临时，不要总问：‘为什么偏偏是我？’因为快乐降临时，你可没问过这个问题。”
+                        朋友不是一个静态的字眼，它始终是动态的。友谊不是你认识了某个人，大家有了点交情，可以经常聊天喝酒这么简单的事情。友谊的那张酒桌其实很高，而且还在一直抬升。
+                        感情悲剧，人生悲剧，往往源于一个人的思维方式悲剧了。聪明的投资者，一眼能够看透一个企业、一个行业的本质，他不受暂时的价格浮动影响。聪明的恋爱者，一眼能够看透一个人、一个家庭的本质，他不会将自己珍贵的人生交给一个不靠谱的人。
+                        这个世界相对还是公平的，你所得到的，一定和你付出的一样多，只是人们往往只看到你所得到的，而只有你自己才能看到你所付出的。——吴翰清
+                        时间管理首先是一套思维，其次才是方法和工具，如果在意识上引不起重视，就会徒然焦虑，而行为始终散漫无章。大部分觉得自己时间管理有问题的人，问题就在于其实并不是多注重时间管理。重视，就是从战略到战术，全方位地紧绷起来，而不是买椟还珠。重视，就是发自内心地愿意去解决问题，而不只是把问题挂在嘴边。——萧秋水
+                        我们得具有识人的基本眼光，从身边的为人处世中，提炼出他的基本价值观。从接人待物中，研判他们的认知力。从只言片语中，看他们的策略与模式，从情绪表现中，观察他的目标是否高远。抓住这几个点，再扩大自己的认知面与活动空间，就不难找到人生的同行者。
+                        这个世界也不那么善良，它常把开你的玩笑当做一件乐事。你是选择反击，还是选择忍受呢？
+                        做一名终身学习者。“终身学习”的意思是，在一个领域达到前20%的水平，然后站在这个基础上，产生对新领域的好奇心，重复上述进程，直到死亡。
+                        这世界，是随机与因果混杂的。因果律中带有随机性，随机率中掺杂因果。什么事一旦绝对化，就会出问题。抓住因果律，只有最优秀的人，才有最好的机会。反者道之动，抓住随机率，把握不确定法则，才能扩大生存面。
+                        当你不好意思拒绝别人的时候   想想他们为什么好意思为难你。
+                        成长：
+                        
+                        想要真正融入团队，首先要打开自己，这个“打开”，包括开放心态、积极沟通和认真工作三个层面。
+                        你的好运气藏在你的实力里，藏在你不为人知的努力里。你越努力，就越幸运。
+                        一个人成熟的标志，就是能应对小概率事件。小概率事件都会发生，只是时间问题。执着于追问“为什么偏偏是我”，这是非常糟糕的一种处理方式。因为这很可能会触发“祸不单行”。
+                        学会同各种情绪和平相处。自恋、忧伤、愤怒、嫉妒都不是问题，问题是我们视它们为失序并试图消灭。但事实上，控制不是秩序，真正的秩序是自由，是顺其自然、活在当下。
+                        有人问我：如何才能交到能够互相懂得和可以信赖的朋友？我一般都会反问一个问题：你对朋友的期待是什么？你对朋友的期待，就是朋友对你的期待。你在你朋友犯错的时候，能否选择不放弃他？希望能够帮助到他？你在你朋友被世人误解的时候，能否选择支持他？站出来和他一起面对？——连岳 朋友之间的借钱，是以消耗友情作为利息。借钱就是给自己买敌人。因此，如果你想要借钱给别人，最好做好两个打算：一是打借条；二是做好即便不还也能承担的心理准备。如果你有钱，也可以效仿钱钟书，要多少，折半，送你。很多时候，钱就是验人机，能帮你识别真性情，也能帮你找出假感情。
+                        对于能力强的人，它给出的路是：改变现状，努力解决。对于能力弱的人，它给出的路是：接受现状，调整心态。做到这两点，99%的婚姻矛盾，其实都可以避免。
+                        无法自我接纳的人，也很难接纳他人。无法自我接纳的人们会对自己不满意的特质诸多挑剔，他们也就更容易注意到别人身上与自己一样的“问题”，比如不耐烦的人也经常会批评他人的不耐心。所以，如果你发现你总是讨厌别人身上的某种表现，很有可能得在自己身上找找类似的“问题”。
+                        关于时间观，流水线工人，只在意手头这一个动作，时间观不超过3个月，之后的事情，他们不关心；中层管理者关心1至3年内发生的事情；CEO会制定5至10年的规划；商业奇才用20年至50年的时间观考虑问题；而改变人类走向的人，伟大的发明家，思想家，看到了100年之后的事情。你可以对比一下，你处于哪个时间观，你可以到达哪个高度？
+                        不愿意走近对方的心，纵然是善意，也会被曲解误读。那些不愿意了解你的人，无论你如何做，他都不会领情。
+                        观点：
+                        
+                        有女人将一辈子的希望寄托在“嫁得好”。有女人觉得最动人的情话是男人一句“我养你”。有人说“男人有钱会变坏”。我只好说，你们太幼稚了！男人有钱才变坏吗？男人一直都坏，关钱什么事儿！男人与婚姻从来不曾靠谱过，都不值得女人托付此生。
+                        《得到》成立的根本原因，不是什么语音模式念书念文章是上班族的网络时代学习方式，也不是什么知识焦虑下的自我陶醉和自我满足，它解决的是在知识领域内的信息不对等问题，降低了学习梯度，从而形成了多赢的局面。在我看来罗振宇的问题并不在于骗，而是在于骗得还不够。《得到》需要更多专业更多门类更多领域的知识分子，需要完成更多知识普及化和大众化的工作，吸引更多想要进行自我终身教育的成人前来，获得前行的必要资粮，找到共同前进的道侣。这样，才会有更多人沿着这条路继续深入走下去，完成从阅读、收听到切身学习的修行之路，真正改变自己的人生。——和菜头
+                        艺术品和任何金融产品一样，甚至和我们做人也一样。凡是有巨大的确定性，和巨大的想象空间的东西，那就一定是更值钱的东西。艺术的魔力，在于让你随时从日常琐事中抽离出来，感知美好。
+                        当房地产成为壁垒较高的投资品以后（不像以前有钱就可以买，而且随便买），有钱阶层的优质投资品种减少。未来，股权投资将成为分化这个阶层的重要因素，而股权投资讲究圈子，不像以前的房子随便可以买。结果就是，“圈子”因素会加速这个阶层的分化。以前是贫富分化，有房无房。以后是富者再分化。
+                        你想进股市练一练，完全没问题，也应该，人是需要成长的，但是进去之前，我的建议是：家人的生活先照顾好，有房住，衣食无忧；资金量不要超过5%的家庭资产，这点钱，亏光了，不伤筋动骨；好好工作，不要太关心股市。——连岳
+                        刘彦斌说：“汽车并非生活必需品，贸然买车不仅会立刻贬值，而且会使你背上许多消费负担，透支你未来的幸福。”没房之前不要买车，这个原则永远都不会过时。
+                        我们会看到这样一群人：他们对人相当严苛，经常提出一些他自己都根本做不到的标准和要求。在任何时候，他总是传递出负面和消极的信息，倾向于贬低、嘲笑、否定别人的行为价值。并且非常乐意做横向比较，用其他人的成绩作为论据实施打击。这是一种死锁路径。
+                        如果你对我好，就是为了从我身上得到更多的东西，那么这种好，我为什么要铭记于心？真正良性的感情，是双方不断付出和加持，是把对方放在心上，处处考虑对方的处境，处处为对方着想。
+                        年龄超过150年老店，哪个国家最多？毫无疑问——日本。日本超过150年的企业有21666家，比第二名还要多两万多。而中国有多少家？只有六必居、张小泉、陈李济、同仁堂、王老吉五家。2016年全球百强创新机构百强榜中，日本有34家企业入围。而中国，仅仅只有“华为”一家。
+                        一个国家如果是依靠道德而不是技术在运转的社会，这种社会的缺陷是，不可避免地要走向崩溃。——黄仁宇
+                        心理：
+                        
+                        美国社会心理学家费斯汀格说：“生活中的10％是由发生在你身上的事情组成，另外90％由你对所发生的事情如何反应所决定。”
+                        批评和抱怨之间的区别非常微妙。批评的底色是前进，而抱怨则是撤退的掩护。激烈的批评意味着人还在继续前进，一边骂一边战斗；持续的抱怨则预示着撤退才是真实意图，抱怨是为了对外推卸自身的责任，内心其实早已经决定放弃，但又不肯亲自背负下达撤退命令，在等着别人帮自己说出口。
+                        虚荣准确的定义是：刻意活在别人好评里的人。经不起激将法的男人是虚荣，不接受自己普通孩子的妈妈是虚荣，为别人而活的人，全是虚荣，虚荣是最强大的病毒。
+                        嫁给城里人还是农村人，根本不是关键，关键是这个男人的观念。有一种男人，他们非常拽，似乎看不起很多人，表现出来的都是对其他人的轻视，但其实他们骨子里非常自卑，他清楚自己的条件并不好，为了掩饰自己的不足，会拼命贬低其他人。和这样的男人生活在一起，就算你拥有再强大的心脏，你都会被打击得体无完肤。
+                        人类对蛇和蜘蛛一类生物的恐惧是天生还是后天习得？这个问题此前一直有争议。马普研究院与Uppsala大学的科学家发现了6个月的婴儿对蛇与蜘蛛的紧张反应，对照为同样颜色和大小的花和鱼，结果表明这种恐惧是与生俱来的，因为这些婴儿根本还没有机会了解蛇与蜘蛛的可怕。
+                        只要站到大众面前，热闹里就总有门道。每个人都可以往自己脸上贴金，都可以塑造自己的社会形象。但是有一件事情是无法作假的，那就是他如何对待他人。人们更愿意通过后者去认识一个人，相信后者表达了更多真实。
+                        喜剧的最高境界是悲剧。只有欢笑没有悲痛没有批判没有反思的电影注定不会成为经典——这算是喜剧片影评人的七大基本素养之一吧。最伟大的经典，其本质都是悲观主义的基调在悲观中反思，人类才能不断前行。［哪一个身躯不被摆布/哪一个脚步不被禁锢］——冲
+                        观众大多数时间都保持漠不关心的状态，只要他们扭过脸来，要么会宽容得毫无底线，要么就会刻薄到溢出毒汁。
+                        很多人误以为直觉就是一种冲动，但实际上二者有着本质的不同。冲动是一种欲望，而非经验处理的结果；而直觉是一种理解，也是一种可以被利用的技能。在重大但非生死攸关的选择上听从直觉：比如换工作、搬家、买车、买房、一些商业决策；但在细节上，比如房屋的大小、价格的比较、决策的执行上，则更多的运用分析推理。
+                        朋友圈的五个流行词，正在圈住你的人生。自律、有趣、情商、人脉、阶层固化，这五个流行词，可能正在毁掉你的生活。现实是，无论阶层怎么固化，总有5%的穷人可以突围而出。人脉的基础是你的“利用价值”，你的利用价值越大，别人就越会帮你。实力比情商更重要。你不能自律，那是你还没找到自己真正喜欢的事情。刻意有趣的样子，真的好无趣。
+                        教育：
+                        
+                        谁说百无一用是书生，那是因为你书没读到位。“勤奋好学”几乎是每一位学术大牛的特质。
+                        物理是经验性的真理体系，可以被实验推翻；数学是先验的真理体系，不可能被实验推翻。
+                        阅读，是为了理解人。 对于个人，最难的莫过于不断建立更高的标准。解决这一问题最有效的方式，是不断结识更好的榜样。不做负面表达，包括讽刺、抱怨、指责、争论、批评、牢骚、大话、评价议论。凡事从建设性出发，尽可能扩大自己的阅读面。文科生多读点科学著作，理科生不妨研究点文学艺术。
+                        基于输出的输入，效率最高。学习时，给自己定个目标：不管是强制写文章，还是留言写下感想，抑或是将看到的内容转述给身边人，都是高效学习的最佳方法。
+                        教育的真正价值和成绩、学位完全无关，只与生命的觉醒有关，你必须自己悟出，什么是真实的和重要的。
+                        我对孩子们的劝告是：犯错要趁早。尽可能地在年轻的时候，在没有进入社会之前，把能够犯的错误都犯完。但是——重要的话都在“但是”以后——你要记住：第一，不要犯致命的错误，第二，不要重复犯错误。只有不断地尝试，不害怕犯错误，才能从失败中吸取教训，迅速地自我迭代，积累更多的人生经验，才能在磨练中变得更加成熟。
+                        战国时期，各国变法图强，韩国申不害推行术治，就是君王跟臣下玩心机，这招确实奏效，至少在本国奏效，可是对上虎狼之国就不灵了，然后就第一个被干死，耍心机的根本是让别人信任你，可若是对方压根不把你当个屁，什么套路也白搭。
+                        不同成长阶段，面临不同的课题。20岁之前，我们是同质竞争，比拼共性。20岁之后，我们是异质竞争，比拼差异化。小时候比乖，比谁的认知最窄，好让大人省心。长大了，就要比谁的认知更宽广，比的是谁能够第一时间，重返婴幼儿时代的全维认知。
+                        时间管理的第一个关键：真正的重视时间管理，而非叶公好龙。时间管理的第二个关键：不要因为受困于人情，导致自己分散了精力、走失了目标。时间管理的第三个关键：及时处理事务箱，让箱子清空，也让心放空。
+                        刘慈欣在科幻小说《三体Ⅲ：死神永生》里有句名言：“弱小和无知不是生存的障碍，傲慢才是。”面对人工智能，我们改变不了科技的进程，但是，我们可以改变自己，以及我们下一代的知识结构。
+                        思辨：
+                        
+                        遇到渣男，有时候也是无奈，这样的情况下，需要及时止损。是很痛苦，但是如果放任自己沉溺，那么，损失就会更大。遇到对的人，有时候是凭运气，但是打造自己，却是可以努力把控。更多的时候，你对了，遇到的人就对，世界也会对。
+                        年轻时判断力弱，但却要做一生最重要的选择，你得挑一个人和你共度一生，这真是人生最大的矛盾。所以，早早有识人本事，一眼可看更多本质，确实是有助于爱情和幸福。
+                        决定感情是否继续，决定一个人值不值得托付，不是看他有没优点，而是看他的缺点是否致命。
+                        「所有能夠教會我們謙卑的學問都是好學問。」當我們知道自己並非完全理性之後，我們才會變得更加謙卑，更加虛心。這是好事。
+                        一个极端自恋的人，是强大的，同时也是脆弱的。一方面，他认为自己无所不能，思维和行动力会非常强；另一方面，一旦遇到关键挫败，自己无所不能的幻觉破碎，又容易陷入彻底的无助，把自己贬低得非常糟糕。
+                        接触的60、70后多了，会发现他们身上普遍有一种80、90后没有的淡定。那种气定神闲，宠辱不惊，非大风大浪之后不能有，在人群中，60、70后颇有定海神针的作用。他们也往往乐于和年轻人分享各种人生、职场经验，丝毫不担心后生们会复制他们的成功。不过这一切的奥秘，三个字就可以总结：买房早。
+                        浪费就是浪费。相信“越爱花钱的人越有钱”，不是自欺欺人，就是蠢。“会花钱的人才会赚钱”并非毫无道理，财务上的适度焦虑确实能让人产生一定的紧迫感，将压力转化为动力，促使你拼命工作，努力赚钱，做更好的财产分配和规划。人类的可悲之处就在于，理性的思考永远压制不住消费的欲望，尤其是对于想立马过上标配人生的年轻人而言，永远不知道“适度”是什么概念。
+                        做人呢，第一需要诚实，第二需要智慧。诚实，就是不撒谎。智慧，就是知道什么时候该撒谎。
+                        当人们问“我正常吗？”的时候，他们口中的正常一般有两种：第一种“和他人一致的正常”指的是：某种行为、思想、情绪、特质等是不是典型的、常见的、符合社会预期的（expected）。如果一个人过分地与众不同，可能会被认为“不正常”。而第二种“功能良好（functional）的正常”指的是：某种行为、思想、情绪、特质是不是适应良好（adaptive），能不能支持一个人在社会中顺畅地工作、学习、交往和生活？在这种前提下，如果一个人的某类表现影响到了Ta的工作，比如一和人说话就结巴，Ta可能被认为“不正常”。
+                        合乎中道的感情自由应该是：在关系中，能够守住自己的界限，不会被其他人用情感绑架，做出强烈违背自己原则或是意愿的事。于此同时，感情的自由也意味着，我们不会把自己的存在感全部刷在一个关系里面，也就是说，不会把人生的意义堆放在一个人身上，焦点都在一处。
+                        </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+        </ul>
+        <div class="loadhtml4">加载更多</div></section>
+      <section id="section5" style="display:none">
+        <ul>
+          <li class="box">
+            <article class="article">
+              <div class="title"><a href="">《自传》五月天</a></div>
+              <div class="content">
+                <p style="line-height: 1.5em;height: auto;overflow: visible"><img src="images/wyt.jpg"> 五月天专辑介绍：
+                  谁说不能让我 此生唯一自传 如同诗一般？
+                  关于作品9号 [自传]
+                  
+                  其实不是自传。
+                  
+                  而是我们人生中登场的人们，
+                  与你我生命轨道交会的故事。
+                  
+                  如果不是你们，
+                  我们的人生不会走到这里，
+                  不会有如此壮阔绮丽的奇幻漂流。
+                  
+                  「如果我们不曾相遇」
+                  这句话几乎是全世界最矛盾的话语。
+                  
+                  我们不会遇到那样的人，
+                  不会有那样的爱情与家，
+                  不会过着后来也算是某种的好好的人生。
+                  我们不会变成无话不聊的兄弟，
+                  我们不会组团穿越任意门到处去巡回，
+                  不会有一群支持我们做任何任性事情的你们。
+                  
+                  身边的乐器消失了，
+                  团员模糊了，
+                  播放器里换上另外一批歌曲，
+                  也许你们曾经做过的决定也改变了。
+                  也许转眼即逝的有限人生，
+                  最好的一天，会改变成另外一天。
+                  
+                  也许没有五月天。
+                  也许没有这段文字，
+                  让我们在这里自言自语自问：
+                  「如果我们不曾相遇」？
+                  
+                  [自传] 前传
+                  his story of Tomorrow
+                  her story of Tomorrow
+                  our story of Tomorrow
+                  history of Tomorrow
+                  
+                  很久很久之前，或不怎么久之后。
+                  他的故事，她的故事，我们的故事。
+                  能够预期的，无法预知的；已经发生的，正要开始的。
+                  
+                  他的故事是五月晨曦里蒸发不了的勇气。
+                  她的故事是五月烈日下奋不顾身的影子。
+                  我们的故事是五月夜里骚动难平的耳语。
+                  
+                  这一首曲子，那一段歌词。
+                  已经完结或未完待续的故事，都有值得记忆的发声方式。
+                  
+                  自传，不只有自己的事。
+                  还有那些，你在我身边的故事。
+                  与你不期而遇，壮丽了五月天的奇幻飘流。
+                  
+                  『如果我们不曾相遇？』
+                  『不，幸好我们不期而遇。』
+                  
+                  五千九百三十九字歌词；五十九分五十九秒总长 五月天 [作品9号]
+                  [自传] 内传
+                  
+                  •如果我们不曾相遇。
+                  Once，in a lifetime ……。
+                  那是再平常不过的一天，值得一提的只有与你相遇；如果我们不曾相遇，就不会看见分离的长相；如果我们不曾相识，就不会知道遗憾的重量；如果我们不曾相遇，不存在这首歌曲；至少这一次，让我们完整彼此一次。
+                  
+                  •成名在望。
+                  「名气」不是最后目的，「音乐」才是不变的想望。
+                  
+                  假设「名气」是一道墙，墙的两边是截然不同的风景、相同的是赤手空拳的勇气。对音乐近乎愚蠢的信仰，是曼陀罗花绽放迷幻不知痛的香气，麻醉暗箭的伤、缓和跌到谷底的痛；黑暗可以没有尽头，只有音乐是那其中幽微确实的光。
+                  
+                  •好好（想把你写成一首歌）。
+                  刚好，才能好好；而刚好，是最被低估的字眼。
+                  你是那个痛哭得毫不保留的我，我是那个有话没说出口的你；所谓的相似，有时是不着痕迹的互补；所有的「好好」、「太好」，都要站在「刚好」的起点才能盛开。时间过去，于是明白那些简单风景，是多么被低估了。
+                  •兄弟。
+                  好的时光一起狂，烂的时候一起挡。
+                  死党的特权，是得意时和你一起疯狂得没头没脑；记得呼你一巴掌，要你别忘了一路不是春光明媚。死党的长相，就是一起摔得鼻青脸肿、也认得出彼此的人；还能笑着说：「你看，我们还蛮耐打的。」
+                  
+                  •人生有限公司。
+                  「I have no choice .」真的吗？
+                  从身无长物到充满牵挂，从不经人事到世故老练，从试图改变到犹豫怀疑，却总是记得「YOLO---You Only Live Once」。每次的怀疑和反抗，都是对有限人生的逆袭，那些你不停用「无限」去冲击「有限」的时刻、都值得纪念。
+                  
+                  •后来的我们。
+                  这是一首不存在的歌曲，你如此快乐、我舍不得你听见伤心的歌；这是一段不存在的喃喃自语，你如此快乐、不应该感觉到我的遗憾。偶尔，偶尔我会想起当时，
+                  我笑着说：「没关系。」
+                  好让后来的你能放心，和我，没有关系。
+                  
+                  •顽固。
+                  好顽固，为了「好」而顽强固执。
+                  外表是顽固，本体是眼泪；叛逆是给世界的，温柔是给你的。渐渐学会有些事可以让步，但也确定了有些事不能放弃；明知道有更容易讨好的笑容，还是转身去摘有刺的玫瑰；为了配得上你的陪伴，我选择对全世界顽固。
+                  
+                  •派对动物。
+                  more pain, more game.
+                  世界太疯狂，所以理智要很饱满；对这个世界来说，你是party animal；对你来说，整个世界就是一场party。学会把真实藏在玩笑里，现实再肥厚、都不能阻止你要party all 9的意志；人生就是派对，正面迎战就对。
+                  
+                  •最好的一天。
+                  再平凡的日子，都有成为best day的潜力。
+                  最好太难以抉择，糟糕总是难以忘记；在最好和糟糕之外，更多的是不上不下、复制贴上的平凡每一天。最好的那天也许还没出现，最糟的那天可能还没发生；「any day」都有机会是惊喜或惊吓，who knows？ •少年他的奇幻漂流。
+                  划过偏见与争端，我们静默航行。
+                  当诸神背过身，当百鬼夜行狂欢，当人间掀起更甚海洋的巨浪，捧起微弱的理智之光，我们将航行在耳语「之间」、在极端「之间」、在绝对「之间」；繁星失语的午夜，也许没有方向、却能安适静待远方天光。
+                  
+                  •终于结束的起点。
+                  现在的终点，是未来的起点。
+                  还原亲密紧贴的距离，undo早已形成的习惯；爱情并不伤人，真正伤人的是没有对错的无奈。即使回到原点，也不再是最初的你我；现在咬牙说出的「再见」，是替未来的「好久不见」预留一个躲雨的屋檐。
+                  
+                  •任意门。
+                  意念和想念，是唯一能打开任意门的钥匙。
+                  发动破烂摩托车，用音乐check in上飞机；和七号公园一起累积哩程数，走出椰林大道降落麦迪逊花园。脑子里那些不能割舍的从前，是每次通关行李超重的原因；任意门不是门，而是不忘初心的意念与想念。
+                  
+                  •转眼。
+                  用一生的长度，写成一瞬间的转眼。
+                  当所有的his story、her story、our story都成了history ，而银白发色已经比月光还凉；闭上双眼紧贴着回忆飞行，脑海是魔幻写实最华丽的舞台；如同马奎斯百年孤寂的终章，让一切曾经、转眼同时发生。
+                  
+                  •你说那 C 和弦就是…。
+                  把青春放在本生灯上烧，会散发一种吉他弦的味道。
+                  青春是一个动词，要用吉他狠狠地捕获；那些单纯的曾经，是记忆里的隐藏版；在你最脆弱的时候、在你最快乐的时候、在你最挫败的时候，甚至是你忘记了的时候，才能找到开启隐藏版档案的密码。</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</div>
+<!-- <footer><div>有志者事竟成 苦心人天不负</div></footer>    -->
+<div id="btn-top" style="display: none;"> <a href="javascript:;" id="totop"></a></div>
+<script src="./js/main.js"></script> 
+<script src="./js/top.js"></script> 
+<script src="./js/dom.js"></script>
+</body>
+</html>

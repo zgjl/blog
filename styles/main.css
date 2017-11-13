@@ -1,0 +1,212 @@
+body {
+    position: relative;
+    min-width: 820px;
+    min-height: 1000px;
+    padding-bottom: 80px;
+    background-color: rgb(150, 150, 150);
+}
+
+#body {
+    width: 820px;
+    height: auto;
+    margin: 10px auto;
+}
+
+#wrap {
+    margin: 0 10px;
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: black;
+}
+
+footer div {
+    height: 60px;
+    margin: 0 auto;
+    width: 880px;
+    background-color: rgb(200, 200, 200);
+    padding-left: 20px;
+    padding-top: 20px;
+    white-space: pre-line;
+}
+
+header {
+    background-color: white;
+    height: 60px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 2px;
+    background-color: rgb(210, 230, 230)
+}
+header p{
+    float:left;
+    padding-top: 8px;
+}
+header div {
+    float: right;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.switch {
+    font-size: 14px;
+}
+
+.switch span {
+    margin-right: 8px;
+}
+
+.switch-open {
+    display: inline-block;
+    padding: 8px 13px 8px 17px;
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+    cursor: pointer;
+}
+
+.switch-close {
+    display: inline-block;
+    padding: 8px 17px 8px 13px;
+    border-radius: 0 20px 20px 0;
+    border-left: none;
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(45, 155, 189)
+}
+
+aside {
+    width: 140px;
+    float: left;
+    line-height: 30px;
+}
+
+aside li {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#li1 {
+    background-color: rgb(199, 158, 254);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+#li2 {
+    background-color: rgb(254, 187, 80);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+#li3 {
+    background-color: rgb(193, 228, 222);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+#li4 {
+    background-color: rgb(246, 149, 129);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+#li5 {
+    background-color: rgb(63, 254, 211);
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+#introduce {
+    background-color: rgb(255, 255, 240);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+#introduce p {
+    white-space: pre-line;
+    font-size: 12px;
+    margin-left: 10px;
+    line-height: 24px;
+}
+
+section {
+    width: 660px;
+    float: left;
+    margin-bottom: 100px;
+}
+
+.box {
+    width: 600px;
+    padding: 10px 20px 40px 20px;
+    margin: 10px 0 20px 20px;
+    background-color: rgb(255, 255, 240);
+    border-radius: 2px;
+    position: relative
+}
+
+.title {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.more {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(97, 137, 182);
+}
+
+.content p {
+    line-height: 1.5em;
+    height: 9em;
+    overflow: hidden;
+    white-space: pre-line;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+img {
+    width: 600px;
+    margin-top: 10px;
+}
+
+.loadhtml2,.loadhtml3,.loadhtml4 {
+    text-align: center;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#btn-top {
+    width: 40px;
+    position: fixed;
+    left: 50%;
+    margin-left: 405px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+#totop {
+    background: url(../images/index.png) rgb(0, 0, 0) no-repeat center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#section3 .content a{
+    color:rgb(41, 164, 180);
+    text-decoration: underline;
+}
+#section3 .content a:hover{
+    color:rgb(250, 100, 0);
+}
