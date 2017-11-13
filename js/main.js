@@ -1,26 +1,36 @@
 $(function () {
 
 	$("#li1").click(function () {
+		$(this).css("font-size","16px")
+		$(this).siblings().css("font-size","14px")
 		$("#section1").slideDown(1000);
 		$("#section1").siblings().hide();
 	});
 
 	$("#li2").click(function () {
+		$(this).css("font-size","16px")
+		$(this).siblings().css("font-size","14px")
 		$("#section2").slideDown(1000);
 		$("#section2").siblings().hide();
 	});
 
 	$("#li3").click(function () {
+		$(this).css("font-size","16px")
+		$(this).siblings().css("font-size","14px")
 		$("#section3").slideDown(1000);
 		$("#section3").siblings().hide();
 	})
 
 	$("#li4").click(function () {
+		$(this).css("font-size","16px")
+		$(this).siblings().css("font-size","14px")
 		$("#section4").slideDown(1000);
 		$("#section4").siblings().hide();
 	})
 
 	$("#li5").click(function () {
+		$(this).css("font-size","16px")
+		$(this).siblings().css("font-size","14px")
 		$("#section5").slideDown(1000);
 		$("#section5").siblings().hide();
 	})
@@ -32,6 +42,8 @@ $(function () {
 		$(".box").css("background-color", "rgb(120, 120, 120)")
 		$(".box").css("color", "rgb(255, 255, 255)")
 		$(".content p").css("color", "rgb(255, 255, 255)")
+		$("#section3 .content a").css("color", "rgb(255, 255, 255)")
+		
 	})
 	$(".switch-close").click(function () {
 		$(this).addClass("active");
@@ -40,6 +52,8 @@ $(function () {
 		$(".box").css("background-color", "rgb(255, 255, 240)")
 		$(".box").css("color", "rgba(0, 0, 0, 0.8)")
 		$(".content p").css("color", "rgba(0, 0, 0, 0.8)")
+		$("#section3 .content a").css("color", "rgb(41, 164, 180)")
+		
 	})
 	
 	var num2 = 1;

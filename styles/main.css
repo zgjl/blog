@@ -204,6 +204,9 @@ img {
     margin-bottom: 10px;
 }
 #section3 .content a{
-    color:rgb(77, 129, 189);
+    color:rgb(41, 164, 180);
     text-decoration: underline;
+}
+#section3 .content a:hover{
+    color:rgb(250, 100, 0);
 }
