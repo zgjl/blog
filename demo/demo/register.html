@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>登录页</title>
+  <!--外部样式表-->
+  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css" />
+
+</head>
+
+<body>
+  <div id="sign-body">
+    <div class="passcard-box">
+      <div class="passcard-nav">
+        <a href="index.html" class="check-zcool-logo"></a>
+        通行证
+        <a href="index.html" class="login-right-subnav main-link-color">返回站酷网</a>
+        <span class="login-right-subnav login-nav">已有帐号，
+          <a href="login.html" class="main-link-color">马上登录</a>
+        </span>
+      </div>
+      <div class="passcon">
+        <h2>注册会员</h2>
+        <form id="myform">
+          <div class="retrieve-pass-box z-p-covers">
+            <div class="retrie-center" id="inputparent">
+              <div class="parent-input-box">
+                <input name="p-phone" id="mobilephone" maxlength="11" placeholder="手机号" class="text-style input-normal-style vericode" type="text">
+                <span class="form-tip"></span>
+              </div>
+              <div class="parent-input-box js-h-from-ele">
+                <input name="password1" style="visibility:hidden;height:0px;border:none;float:left;" type="password">
+                <input autocomplete="off" name="password" id="password" placeholder="6-20位密码，字母/数字/符号至少2种" class="text-style input-normal-style vericode"
+                  type="password">
+                <i class="form-eye-icon"></i>
+                <span class="form-tip"> </span>
+              </div>
+              <div class="agreemen-txt checkbox-wrap">
+                <label class="label-checkbox check-cd" for="Useragreement">
+                  <input name="autolog" checked="" id="Useragreement" class="check-c" type="checkbox"> 我已阅读并接受
+                  <a href="" target="_blank" class="main-link-color">用户协议</a>
+                </label>
+                <span class="form-tip"></span>
+              </div>
+              <div class="passcard-btns register-btn">
+                <input value="注册" id="registered" class="btn-disabled passcard-btn" type="submit">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--页脚-->
+    <div class="footer">
+      <p>京ICP备11017824号-4 / 京ICP证130164号 北京市公安局朝阳分局备案编号:110105000501</p>
+      <p>Copyright © 2016-2017 ZCOOL</p>
+    </div>
+  </div>
+</body>
+
+</html>
