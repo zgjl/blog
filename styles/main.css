@@ -179,7 +179,7 @@ img {
     margin-top: 10px;
 }
 
-.loadhtml {
+.loadhtml2,.loadhtml3,.loadhtml4 {
     text-align: center;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8)
@@ -190,7 +190,7 @@ img {
     position: fixed;
     left: 50%;
     margin-left: 405px;
-    bottom: 110px;
+    bottom: 50px;
     z-index: 1;
 }
 
@@ -202,4 +202,8 @@ img {
     vertical-align: middle;
     text-align: center;
     margin-bottom: 10px;
+}
+#section3 .content a{
+    color:rgb(77, 129, 189);
+    text-decoration: underline;
 }

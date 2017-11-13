@@ -30,7 +30,7 @@ window.onload = function () {
 			var ispeed = Math.floor(-osTop / 6);
 			document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
 			isTop = true;
-			console.log(osTop - ispeed);
+			// console.log(osTop - ispeed);
 			if (osTop === 0) {
 				clearInterval(timer1);
 			}

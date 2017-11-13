@@ -1,5 +1,5 @@
 $(function () {
-	
+
 	$("#li1").click(function () {
 		$("#section1").slideDown(1000);
 		$("#section1").siblings().hide();
@@ -41,21 +41,70 @@ $(function () {
 		$(".box").css("color", "rgba(0, 0, 0, 0.8)")
 		$(".content p").css("color", "rgba(0, 0, 0, 0.8)")
 	})
+	
+	var num2 = 1;
+	$(".loadhtml2").click(function () {
 
-	var num = 1;
-	$(".loadhtml").click(function () {
-		if (num == 4) {
-        $(this).html("我是有底线的")
+		if (num2 == 8) {
+			$(this).html("我是有底线的")
 		} else {
 			var li = document.createElement("li");
 			li.className = "box";
-			$(this).prev().append(li);
-			$(this).prev().find("li").last().load("./html/" + num + ".html");
-			num++;
+			var ul = $(this).prev();
+			ul.append(li);
+			ul.find("li").last().load("./html2/" + num2 + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+				}
+			});
+			num2++;
 		}
-
-
 	})
+
+	// var num3 = 1;
+	// $(".loadhtml3").click(function () {
+
+	// 	if (num3 == 4) {
+	// 		$(this).html("我是有底线的")
+	// 	} else {
+	// 		var li = document.createElement("li");
+	// 		li.className = "box";
+	// 		var ul = $(this).prev();
+	// 		ul.append(li);
+	// 		ul.find("li").last().load("./html3/" + num3 + ".html", function () {
+	// 			if ($(".switch-open").hasClass("active")) {
+	// 				$(".box").css("background-color", "rgb(120, 120, 120)")
+	// 				$(".box").css("color", "rgb(255, 255, 255)")
+	// 				$(".content p").css("color", "rgb(255, 255, 255)")
+	// 			}
+	// 		});
+	// 		num3++;
+	// 	}
+	// })
+
+	var num4 = 1;
+	$(".loadhtml4").click(function () {
+
+		if (num4 == 4) {
+			$(this).html("我是有底线的")
+		} else {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $(this).prev();
+			ul.append(li);
+			ul.find("li").last().load("./html4/" + num4 + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+				}
+			});
+			num4++;
+		}
+	})
+
 
 	$(".more").click(function () {
 		var p = $(this).next(".content").find("p");
@@ -78,4 +127,3 @@ $(function () {
 	})
 
 })
-
