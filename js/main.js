@@ -1,46 +1,74 @@
 $(function () {
-// 导航栏效果
-    
+	// 导航栏效果
+	function liClick(selector, obj) {
+		var speed = $(selector).outerHeight() / 2;
+		obj.css("font-size", "16px")
+		obj.siblings().css("font-size", "14px")
+		$(selector).slideDown(speed);
+		$(selector).siblings().hide();
+	}
+
 	$("#li1").click(function () {
-		var speed1 = $("#section1").outerHeight()/2;
-		$(this).css("font-size", "16px")
-		$(this).siblings().css("font-size", "14px")
-		$("#section1").slideDown(speed1);
-		$("#section1").siblings().hide();
+		obj = $(this)
+		liClick("#section1",obj )
 	});
-
 	$("#li2").click(function () {
-		var speed2 = $("#section2").outerHeight()/2;
-		$(this).css("font-size", "16px")
-		$(this).siblings().css("font-size", "14px")
-		$("#section2").slideDown(speed2);
-		$("#section2").siblings().hide();
+		obj = $(this)
+		liClick("#section2",obj )
+	});
+	$("#li3").click(function () {
+		obj = $(this)
+		liClick("#section3",obj )
+	});
+	$("#li4").click(function () {
+		obj = $(this)
+		liClick("#section4",obj )
+	});
+	$("#li5").click(function () {
+		obj = $(this)
+		liClick("#section5",obj )
 	});
 
-	$("#li3").click(function () {
-		var speed3 = $("#section3").outerHeight()/2;
-		$(this).css("font-size", "16px")
-		$(this).siblings().css("font-size", "14px")
-		$("#section3").slideDown(speed3);
-		$("#section3").siblings().hide();
-	})
+	// $("#li1").click(function () {
+	// 	var speed1 = $("#section1").outerHeight() / 2;
+	// 	$(this).css("font-size", "16px")
+	// 	$(this).siblings().css("font-size", "14px")
+	// 	$("#section1").slideDown(speed1);
+	// 	$("#section1").siblings().hide();
+	// });
 
-	$("#li4").click(function () {
-		var speed4 = $("#section4").outerHeight()/2;
-		$(this).css("font-size", "16px")
-		$(this).siblings().css("font-size", "14px")
-		$("#section4").slideDown(speed4);
-		$("#section4").siblings().hide();
-	})
+	// $("#li2").click(function () {
+	// 	var speed2 = $("#section2").outerHeight() / 2;
+	// 	$(this).css("font-size", "16px")
+	// 	$(this).siblings().css("font-size", "14px")
+	// 	$("#section2").slideDown(speed2);
+	// 	$("#section2").siblings().hide();
+	// });
 
-	$("#li5").click(function () {
-		var speed5 = $("#section5").outerHeight()/2;
-		$(this).css("font-size", "16px")
-		$(this).siblings().css("font-size", "14px")
-		$("#section5").slideDown(speed5);
-		$("#section5").siblings().hide();
-	})
-// 夜间模式切换
+	// $("#li3").click(function () {
+	// 	var speed3 = $("#section3").outerHeight() / 2;
+	// 	$(this).css("font-size", "16px")
+	// 	$(this).siblings().css("font-size", "14px")
+	// 	$("#section3").slideDown(speed3);
+	// 	$("#section3").siblings().hide();
+	// })
+
+	// $("#li4").click(function () {
+	// 	var speed4 = $("#section4").outerHeight() / 2;
+	// 	$(this).css("font-size", "16px")
+	// 	$(this).siblings().css("font-size", "14px")
+	// 	$("#section4").slideDown(speed4);
+	// 	$("#section4").siblings().hide();
+	// })
+
+	// $("#li5").click(function () {
+	// 	var speed5 = $("#section5").outerHeight() / 2;
+	// 	$(this).css("font-size", "16px")
+	// 	$(this).siblings().css("font-size", "14px")
+	// 	$("#section5").slideDown(speed5);
+	// 	$("#section5").siblings().hide();
+	// })
+	// 夜间模式切换
 	$(".switch-open").click(function () {
 		$(this).addClass("active");
 		$(".switch-close").removeClass("active");
@@ -61,7 +89,7 @@ $(function () {
 		$("#section3 .content a").css("color", "rgb(41, 164, 180)")
 		$(".more").css("color", "rgb(97, 137, 182)")
 	})
-// 加载更多效果
+	// 加载更多效果
 	var num2 = 1;
 	$(".loadhtml2").click(function () {
 		if (num2 == 8) {
@@ -103,7 +131,7 @@ $(function () {
 			num4++;
 		}
 	})
-// 全文收起效果，注意：此处使用$(document).on来为文档中的每个全文绑定点击事件	
+	// 全文收起效果，注意：此处使用$(document).on来为文档中的每个全文绑定点击事件	
 	$(document).on("click", ".more", function () {
 		var p = $(this).next(".content").find("p");
 		var str = p.css("overflow");
