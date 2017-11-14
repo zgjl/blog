@@ -1,4 +1,84 @@
 $(function () {
+	
+	var total2 = 10;//前端知识,网页数量
+	var total4 = 5;//文摘笔记,网页数量
+
+	var num2 = total2 - 3;
+	! function () {
+		for (var i = total2; i > num2; i--) {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $("#section2 ul");
+			ul.append(li);
+			ul.find("li").last().load("./html2/" + i + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+					$(".more").css("color", "rgb(255, 255, 255)")
+				}
+			});
+		}
+	}();
+	// 加载更多效果
+	$(".loadhtml2").click(function () {
+		if (num2 == 0) {
+			$(this).html("我是有底线的")
+		} else {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $(this).prev();
+			ul.append(li);
+			ul.find("li").last().load("./html2/" + num2 + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+					$(".more").css("color", "rgb(255, 255, 255)")
+				}
+			});
+			num2--;
+		}
+	})
+
+	var num4 = total4 - 3;
+	! function () {
+		for (var i = total4; i > num4; i--) {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $("#section4 ul");
+			ul.append(li);
+			ul.find("li").last().load("./html4/" + i + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+					$(".more").css("color", "rgb(255, 255, 255)")
+				}
+			});
+		}
+		
+	}();
+	$(".loadhtml4").click(function () {
+		if (num4 == 0) {
+			$(this).html("我是有底线的")
+		} else {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $(this).prev();
+			ul.append(li);
+			ul.find("li").last().load("./html4/" + num4 + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+					$(".more").css("color", "rgb(255, 255, 255)")
+				}
+			});
+			num4--;
+		}
+	})
+
 	// 导航栏效果
 	function liClick(selector, obj) {
 		var speed = $(selector).outerHeight() / 2;
@@ -50,48 +130,7 @@ $(function () {
 		$("#section3 .content a").css("color", "rgb(41, 164, 180)")
 		$(".more").css("color", "rgb(97, 137, 182)")
 	})
-	// 加载更多效果
-	var num2 = 4;
-	$(".loadhtml2").click(function () {
-		if (num2 == 11) {
-			$(this).html("我是有底线的")
-		} else {
-			var li = document.createElement("li");
-			li.className = "box";
-			var ul = $(this).prev();
-			ul.append(li);
-			ul.find("li").last().load("./html2/" + num2 + ".html", function () {
-				if ($(".switch-open").hasClass("active")) {
-					$(".box").css("background-color", "rgb(120, 120, 120)")
-					$(".box").css("color", "rgb(255, 255, 255)")
-					$(".content p").css("color", "rgb(255, 255, 255)")
-					$(".more").css("color", "rgb(255, 255, 255)")
-				}
-			});
-			num2++;
-		}
-	})
 
-	var num4 = 4;
-	$(".loadhtml4").click(function () {
-		if (num4 == 6) {
-			$(this).html("我是有底线的")
-		} else {
-			var li = document.createElement("li");
-			li.className = "box";
-			var ul = $(this).prev();
-			ul.append(li);
-			ul.find("li").last().load("./html4/" + num4 + ".html", function () {
-				if ($(".switch-open").hasClass("active")) {
-					$(".box").css("background-color", "rgb(120, 120, 120)")
-					$(".box").css("color", "rgb(255, 255, 255)")
-					$(".content p").css("color", "rgb(255, 255, 255)")
-					$(".more").css("color", "rgb(255, 255, 255)")
-				}
-			});
-			num4++;
-		}
-	})
 	// 全文收起效果，注意：此处使用$(document).on来为文档中的每个全文绑定点击事件	
 	$(document).on("click", ".more", function () {
 		var p = $(this).next(".content").find("p");
@@ -113,38 +152,5 @@ $(function () {
 		}
 	})
 
-	!function () {
-		for (var i = 1; i < 4; i++) {
-			var li = document.createElement("li");
-			li.className = "box";
-			var ul = $("#section2 ul");
-			ul.append(li);
-			ul.find("li").last().load("./html2/" + i + ".html", function () {
-				if ($(".switch-open").hasClass("active")) {
-					$(".box").css("background-color", "rgb(120, 120, 120)")
-					$(".box").css("color", "rgb(255, 255, 255)")
-					$(".content p").css("color", "rgb(255, 255, 255)")
-					$(".more").css("color", "rgb(255, 255, 255)")
-				}
-			});
-		}
-	}();
-
-	!function () {
-		for (var i = 1; i < 4; i++) {
-			var li = document.createElement("li");
-			li.className = "box";
-			var ul = $("#section4 ul");
-			ul.append(li);
-			ul.find("li").last().load("./html4/" + i + ".html", function () {
-				if ($(".switch-open").hasClass("active")) {
-					$(".box").css("background-color", "rgb(120, 120, 120)")
-					$(".box").css("color", "rgb(255, 255, 255)")
-					$(".content p").css("color", "rgb(255, 255, 255)")
-					$(".more").css("color", "rgb(255, 255, 255)")
-				}
-			});
-		}
-	}();
 
 })
