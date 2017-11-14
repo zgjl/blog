@@ -1,6 +1,6 @@
 $(function () {
 	
-	var total2 = 10;//前端知识,网页数量
+	var total2 = 11;//前端知识,网页数量
 	var total4 = 5;//文摘笔记,网页数量
 
 	var num2 = total2 - 3;
@@ -109,26 +109,41 @@ $(function () {
 		liClick("#section5", obj)
 	});
 
+	// 夜间模式自动，晚上18点以后早上6点之前自动进入夜间模式
+	var dt1 = new Date();
+	var hour1 = dt1.getHours();
+
+	if(!(hour1>=6&&hour1<=17)){
+		$(".switch-open").addClass("active");
+		$(".switch-close").removeClass("active");
+		$("body").css("background-color", "rgb(63, 63, 63)");
+		$(".box").css("background-color", "rgb(120, 120, 120)");
+		$(".box").css("color", "rgb(255, 255, 255)");
+		$(".content p").css("color", "rgb(255, 255, 255)");
+		$("#section3 .content a").css("color", "rgb(255, 255, 255)");
+		$(".more").css("color", "rgb(255, 255, 255)");
+	}
 	// 夜间模式切换
 	$(".switch-open").click(function () {
 		$(this).addClass("active");
 		$(".switch-close").removeClass("active");
-		$("body").css("background-color", "rgb(63, 63, 63)")
-		$(".box").css("background-color", "rgb(120, 120, 120)")
-		$(".box").css("color", "rgb(255, 255, 255)")
-		$(".content p").css("color", "rgb(255, 255, 255)")
-		$("#section3 .content a").css("color", "rgb(255, 255, 255)")
-		$(".more").css("color", "rgb(255, 255, 255)")
+		$("body").css("background-color", "rgb(63, 63, 63)");
+		$(".box").css("background-color", "rgb(120, 120, 120)");
+		$(".box").css("color", "rgb(255, 255, 255)");
+		$(".content p").css("color", "rgb(255, 255, 255)");
+		$("#section3 .content a").css("color", "rgb(255, 255, 255)");
+		$(".more").css("color", "rgb(255, 255, 255)");
 	})
+
 	$(".switch-close").click(function () {
 		$(this).addClass("active");
 		$(".switch-open").removeClass("active");
-		$("body").css("background-color", "rgb(150, 150, 150)")
-		$(".box").css("background-color", "rgb(255, 255, 240)")
-		$(".box").css("color", "rgba(0, 0, 0, 0.8)")
-		$(".content p").css("color", "rgba(0, 0, 0, 0.8)")
-		$("#section3 .content a").css("color", "rgb(41, 164, 180)")
-		$(".more").css("color", "rgb(97, 137, 182)")
+		$("body").css("background-color", "rgb(150, 150, 150)");
+		$(".box").css("background-color", "rgb(255, 255, 240)");
+		$(".box").css("color", "rgba(0, 0, 0, 0.8)");
+		$(".content p").css("color", "rgba(0, 0, 0, 0.8)");
+		$("#section3 .content a").css("color", "rgb(41, 164, 180)");
+		$(".more").css("color", "rgb(97, 137, 182)");
 	})
 
 	// 全文收起效果，注意：此处使用$(document).on来为文档中的每个全文绑定点击事件	
@@ -152,5 +167,8 @@ $(function () {
 		}
 	})
 
-
+	$("#music audio").css({
+		"width": "140px",
+		"height": "50px"
+	})
 })

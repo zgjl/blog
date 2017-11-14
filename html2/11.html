@@ -1,0 +1,122 @@
+<article class="article">
+  <div class="title">jQuery</div>
+  <div class="more">全文</div>
+  <div class="content">
+    <p>jQuery 是一个 JavaScript 库。
+jQuery 极大地简化了 JavaScript 编程。
+jQuery 库包含以下特性：
+HTML 元素选取
+HTML 元素操作
+CSS 操作
+HTML 事件函数
+JavaScript 特效和动画
+HTML DOM 遍历和修改
+AJAX
+Utilities
+
+通过 jQuery，您可以选取（查询，query） HTML 元素，并对它们执行“操作”（actions）
+jQuery 语法
+jQuery 语法是为 HTML 元素的选取编制的，可以对元素执行某些操作。
+基础语法是：$(selector).action()
+美元符号定义 jQuery
+选择符（selector）“查询”和“查找” HTML 元素
+jQuery 的 action() 执行对元素的操作
+jQuery 选择器
+选择器	实例	选取
+*	$(&quot;*&quot;)	所有元素
+#id	$(&quot;#lastname&quot;)	id=&quot;lastname&quot; 的元素
+.class	$(&quot;.intro&quot;)	所有 class=&quot;intro&quot; 的元素
+element	$(&quot;p&quot;)	所有 &lt;p&gt; 元素
+.class.class	$(&quot;.intro.demo&quot;)	所有 class=&quot;intro&quot; 且 class=&quot;demo&quot; 的元素
+ 	 	 
+:first	$(&quot;p:first&quot;)	第一个 &lt;p&gt; 元素
+:last	$(&quot;p:last&quot;)	最后一个 &lt;p&gt; 元素
+:even	$(&quot;tr:even&quot;)	所有偶数 &lt;tr&gt; 元素
+:odd	$(&quot;tr:odd&quot;)	所有奇数 &lt;tr&gt; 元素
+ 	 	 
+:eq(index)	$(&quot;ul li:eq(3)&quot;)	列表中的第四个元素（index 从 0 开始）
+:gt(no)	$(&quot;ul li:gt(3)&quot;)	列出 index 大于 3 的元素
+:lt(no)	$(&quot;ul li:lt(3)&quot;)	列出 index 小于 3 的元素
+:not(selector)	$(&quot;input:not(:empty)&quot;)	所有不为空的 input 元素
+ 	 	 
+:header	$(&quot;:header&quot;)	所有标题元素 &lt;h1&gt; - &lt;h6&gt;
+:animated	 	所有动画元素
+ 	 	 
+:contains(text)	$(&quot;:contains('W3School')&quot;)	包含指定字符串的所有元素
+:empty	$(&quot;:empty&quot;)	无子（元素）节点的所有元素
+:hidden	$(&quot;p:hidden&quot;)	所有隐藏的 &lt;p&gt; 元素
+:visible	$(&quot;table:visible&quot;)	所有可见的表格
+ 	 	 
+s1,s2,s3	$(&quot;th,td,.intro&quot;)	所有带有匹配选择的元素
+ 	 	 
+[attribute]	$(&quot;[href]&quot;)	所有带有 href 属性的元素
+[attribute=value]	$(&quot;[href='#']&quot;)	所有 href 属性的值等于 &quot;#&quot; 的元素
+[attribute!=value]	$(&quot;[href!='#']&quot;)	所有 href 属性的值不等于 &quot;#&quot; 的元素
+[attribute$=value]	$(&quot;[href$='.jpg']&quot;)	所有 href 属性的值包含以 &quot;.jpg&quot; 结尾的元素
+ 	 	 
+:input	$(&quot;:input&quot;)	所有 &lt;input&gt; 元素
+:text	$(&quot;:text&quot;)	所有 type=&quot;text&quot; 的 &lt;input&gt; 元素
+:password	$(&quot;:password&quot;)	所有 type=&quot;password&quot; 的 &lt;input&gt; 元素
+:radio	$(&quot;:radio&quot;)	所有 type=&quot;radio&quot; 的 &lt;input&gt; 元素
+:checkbox	$(&quot;:checkbox&quot;)	所有 type=&quot;checkbox&quot; 的 &lt;input&gt; 元素
+:submit	$(&quot;:submit&quot;)	所有 type=&quot;submit&quot; 的 &lt;input&gt; 元素
+:reset	$(&quot;:reset&quot;)	所有 type=&quot;reset&quot; 的 &lt;input&gt; 元素
+:button	$(&quot;:button&quot;)	所有 type=&quot;button&quot; 的 &lt;input&gt; 元素
+:image	$(&quot;:image&quot;)	所有 type=&quot;image&quot; 的 &lt;input&gt; 元素
+:file	$(&quot;:file&quot;)	所有 type=&quot;file&quot; 的 &lt;input&gt; 元素
+ 	 	 
+:enabled	$(&quot;:enabled&quot;)	所有激活的 input 元素
+:disabled	$(&quot;:disabled&quot;)	所有禁用的 input 元素
+:selected	$(&quot;:selected&quot;)	所有被选取的 input 元素
+:checked	$(&quot;:checked&quot;)	所有被选中的 input 元素
+
+jQuery 事件函数
+jQuery 事件处理方法是 jQuery 中的核心函数。
+事件处理程序指的是当 HTML 中发生某些事件时所调用的方法。术语由事件“触发”（或“激发”）经常会被使用。
+方法	描述
+bind()	向匹配元素附加一个或更多事件处理器
+blur()	触发、或将函数绑定到指定元素的 blur 事件
+change()	触发、或将函数绑定到指定元素的 change 事件
+click()	触发、或将函数绑定到指定元素的 click 事件
+dblclick()	触发、或将函数绑定到指定元素的 double click 事件
+delegate()	向匹配元素的当前或未来的子元素附加一个或多个事件处理器
+die()	移除所有通过 live() 函数添加的事件处理程序。
+error()	触发、或将函数绑定到指定元素的 error 事件
+event.isDefaultPrevented()	返回 event 对象上是否调用了 event.preventDefault()。
+event.pageX	相对于文档左边缘的鼠标位置。
+event.pageY	相对于文档上边缘的鼠标位置。
+event.preventDefault()	阻止事件的默认动作。
+event.result	包含由被指定事件触发的事件处理器返回的最后一个值。
+event.target	触发该事件的 DOM 元素。
+event.timeStamp	该属性返回从 1970 年 1 月 1 日到事件发生时的毫秒数。
+event.type	描述事件的类型。
+event.which	指示按了哪个键或按钮。
+focus()	触发、或将函数绑定到指定元素的 focus 事件
+keydown()	触发、或将函数绑定到指定元素的 key down 事件
+keypress()	触发、或将函数绑定到指定元素的 key press 事件
+keyup()	触发、或将函数绑定到指定元素的 key up 事件
+live()	为当前或未来的匹配元素添加一个或多个事件处理器
+load()	触发、或将函数绑定到指定元素的 load 事件
+mousedown()	触发、或将函数绑定到指定元素的 mouse down 事件
+mouseenter()	触发、或将函数绑定到指定元素的 mouse enter 事件
+mouseleave()	触发、或将函数绑定到指定元素的 mouse leave 事件
+mousemove()	触发、或将函数绑定到指定元素的 mouse move 事件
+mouseout()	触发、或将函数绑定到指定元素的 mouse out 事件
+mouseover()	触发、或将函数绑定到指定元素的 mouse over 事件
+mouseup()	触发、或将函数绑定到指定元素的 mouse up 事件
+one()	向匹配元素添加事件处理器。每个元素只能触发一次该处理器。
+ready()	文档就绪事件（当 HTML 文档就绪可用时）
+resize()	触发、或将函数绑定到指定元素的 resize 事件
+scroll()	触发、或将函数绑定到指定元素的 scroll 事件
+select()	触发、或将函数绑定到指定元素的 select 事件
+submit()	触发、或将函数绑定到指定元素的 submit 事件
+toggle()	绑定两个或多个事件处理器函数，当发生轮流的 click 事件时执行。
+trigger()	所有匹配元素的指定事件
+triggerHandler()	第一个被匹配元素的指定事件
+unbind()	从匹配元素移除一个被添加的事件处理器
+undelegate()	从匹配元素移除一个被添加的事件处理器，现在或将来
+unload()	触发、或将函数绑定到指定元素的 unload 事件
+
+</p>
+  </div>
+</article>

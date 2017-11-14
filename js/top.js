@@ -97,3 +97,8 @@ var text = document.getElementById("time")
 setInterval(function () {
 	text.innerHTML = formatDate(new Date());
 }, 1000);
+
+// var welcome = document.getElementById("welcome")
+// setTimeout(function(){
+// 	welcome.style.display="none";
+// },3000)

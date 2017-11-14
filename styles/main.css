@@ -6,6 +6,20 @@ body {
     background-color: rgb(150, 150, 150);
 }
 
+#welcome {
+    position: fixed;
+    left: 55%;
+    top: 12%;
+    width: 500px;
+    height: 100px;
+    margin-left: -250px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    text-align: center;
+    color: rgb(192, 99, 184);
+    font-size: 36px;
+}
+
 #body {
     width: 820px;
     height: auto;
@@ -45,10 +59,12 @@ header {
     background-color: rgb(210, 230, 230);
     position: relative;
 }
-header p{
-    float:left;
+
+header p {
+    float: left;
     padding-top: 8px;
 }
+
 .switch {
     float: right;
     margin-right: 20px;
@@ -78,12 +94,18 @@ header p{
     border-left: none;
     cursor: pointer;
 }
-#time{
-    position:absolute;
-    top:10px;
-    left:20px;
+
+#time {
+    position: absolute;
+    top: 10px;
+    left: 20px;
     font-size: 14px;
 }
+
+#music {
+    margin-top: 10px;
+}
+
 .active {
     background-color: rgb(45, 155, 189)
 }
@@ -185,7 +207,9 @@ img {
     margin-top: 10px;
 }
 
-.loadhtml2,.loadhtml3,.loadhtml4 {
+.loadhtml2,
+.loadhtml3,
+.loadhtml4 {
     text-align: center;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8)
@@ -209,10 +233,12 @@ img {
     text-align: center;
     margin-bottom: 10px;
 }
-#section3 .content a{
-    color:rgb(41, 164, 180);
+
+#section3 .content a {
+    color: rgb(41, 164, 180);
     text-decoration: underline;
 }
-#section3 .content a:hover{
-    color:rgb(250, 100, 0);
+
+#section3 .content a:hover {
+    color: rgb(250, 100, 0);
 }
