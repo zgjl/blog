@@ -97,3 +97,4 @@ var text = document.getElementById("time")
 setInterval(function () {
 	text.innerHTML = formatDate(new Date());
 }, 1000);
+

@@ -29,45 +29,6 @@ $(function () {
 		liClick("#section5", obj)
 	});
 
-	// $("#li1").click(function () {
-	// 	var speed1 = $("#section1").outerHeight() / 2;
-	// 	$(this).css("font-size", "16px")
-	// 	$(this).siblings().css("font-size", "14px")
-	// 	$("#section1").slideDown(speed1);
-	// 	$("#section1").siblings().hide();
-	// });
-
-	// $("#li2").click(function () {
-	// 	var speed2 = $("#section2").outerHeight() / 2;
-	// 	$(this).css("font-size", "16px")
-	// 	$(this).siblings().css("font-size", "14px")
-	// 	$("#section2").slideDown(speed2);
-	// 	$("#section2").siblings().hide();
-	// });
-
-	// $("#li3").click(function () {
-	// 	var speed3 = $("#section3").outerHeight() / 2;
-	// 	$(this).css("font-size", "16px")
-	// 	$(this).siblings().css("font-size", "14px")
-	// 	$("#section3").slideDown(speed3);
-	// 	$("#section3").siblings().hide();
-	// })
-
-	// $("#li4").click(function () {
-	// 	var speed4 = $("#section4").outerHeight() / 2;
-	// 	$(this).css("font-size", "16px")
-	// 	$(this).siblings().css("font-size", "14px")
-	// 	$("#section4").slideDown(speed4);
-	// 	$("#section4").siblings().hide();
-	// })
-
-	// $("#li5").click(function () {
-	// 	var speed5 = $("#section5").outerHeight() / 2;
-	// 	$(this).css("font-size", "16px")
-	// 	$(this).siblings().css("font-size", "14px")
-	// 	$("#section5").slideDown(speed5);
-	// 	$("#section5").siblings().hide();
-	// })
 	// 夜间模式切换
 	$(".switch-open").click(function () {
 		$(this).addClass("active");
@@ -90,9 +51,9 @@ $(function () {
 		$(".more").css("color", "rgb(97, 137, 182)")
 	})
 	// 加载更多效果
-	var num2 = 1;
+	var num2 = 4;
 	$(".loadhtml2").click(function () {
-		if (num2 == 8) {
+		if (num2 == 11) {
 			$(this).html("我是有底线的")
 		} else {
 			var li = document.createElement("li");
@@ -111,9 +72,9 @@ $(function () {
 		}
 	})
 
-	var num4 = 1;
+	var num4 = 4;
 	$(".loadhtml4").click(function () {
-		if (num4 == 4) {
+		if (num4 == 6) {
 			$(this).html("我是有底线的")
 		} else {
 			var li = document.createElement("li");
@@ -150,6 +111,40 @@ $(function () {
 			})
 			$(this).text("全文")
 		}
-	})	
-})
+	})
 
+	!function () {
+		for (var i = 1; i < 4; i++) {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $("#section2 ul");
+			ul.append(li);
+			ul.find("li").last().load("./html2/" + i + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+					$(".more").css("color", "rgb(255, 255, 255)")
+				}
+			});
+		}
+	}();
+
+	!function () {
+		for (var i = 1; i < 4; i++) {
+			var li = document.createElement("li");
+			li.className = "box";
+			var ul = $("#section4 ul");
+			ul.append(li);
+			ul.find("li").last().load("./html4/" + i + ".html", function () {
+				if ($(".switch-open").hasClass("active")) {
+					$(".box").css("background-color", "rgb(120, 120, 120)")
+					$(".box").css("color", "rgb(255, 255, 255)")
+					$(".content p").css("color", "rgb(255, 255, 255)")
+					$(".more").css("color", "rgb(255, 255, 255)")
+				}
+			});
+		}
+	}();
+
+})
