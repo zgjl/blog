@@ -1,37 +1,43 @@
 $(function () {
 // 导航栏效果
+    
 	$("#li1").click(function () {
+		var speed1 = $("#section1").outerHeight()/2;
 		$(this).css("font-size", "16px")
 		$(this).siblings().css("font-size", "14px")
-		$("#section1").slideDown(1000);
+		$("#section1").slideDown(speed1);
 		$("#section1").siblings().hide();
 	});
 
 	$("#li2").click(function () {
+		var speed2 = $("#section2").outerHeight()/2;
 		$(this).css("font-size", "16px")
 		$(this).siblings().css("font-size", "14px")
-		$("#section2").slideDown(1000);
+		$("#section2").slideDown(speed2);
 		$("#section2").siblings().hide();
 	});
 
 	$("#li3").click(function () {
+		var speed3 = $("#section3").outerHeight()/2;
 		$(this).css("font-size", "16px")
 		$(this).siblings().css("font-size", "14px")
-		$("#section3").slideDown(1000);
+		$("#section3").slideDown(speed3);
 		$("#section3").siblings().hide();
 	})
 
 	$("#li4").click(function () {
+		var speed4 = $("#section4").outerHeight()/2;
 		$(this).css("font-size", "16px")
 		$(this).siblings().css("font-size", "14px")
-		$("#section4").slideDown(1000);
+		$("#section4").slideDown(speed4);
 		$("#section4").siblings().hide();
 	})
 
 	$("#li5").click(function () {
+		var speed5 = $("#section5").outerHeight()/2;
 		$(this).css("font-size", "16px")
 		$(this).siblings().css("font-size", "14px")
-		$("#section5").slideDown(1000);
+		$("#section5").slideDown(speed5);
 		$("#section5").siblings().hide();
 	})
 // 夜间模式切换
