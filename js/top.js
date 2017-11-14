@@ -36,5 +36,64 @@ window.onload = function () {
 			}
 		}, 30);
 	}
-
 }
+
+function formatDate(dt) {
+	if (!dt) {
+		var dt = new Date();
+	}
+
+	var year = dt.getFullYear();
+	var month = dt.getMonth() + 1;
+	var date = dt.getDate();
+	var hour = dt.getHours();
+	var minute = dt.getMinutes();
+	var second = dt.getSeconds();
+	var day = dt.getDay();
+	var days = '';
+	switch (day) {
+		case 0:
+			days = "星期天";
+			break;
+		case 1:
+			days = "星期一";
+			break;
+		case 2:
+			days = "星期二";
+			break;
+		case 3:
+			days = "星期三";
+			break;
+		case 4:
+			days = "星期四";
+			break;
+		case 5:
+			days = "星期五";
+			break;
+		case 6:
+			days = "星期六";
+			break;
+	}
+
+	if (month < 10) {
+		month = "0" + month;
+	}
+	if (date < 10) {
+		date = "0" + date;
+	}
+	if (hour < 10) {
+		hour = "0" + hour;
+	}
+	if (minute < 10) {
+		minute = "0" + minute;
+	}
+	if (second < 10) {
+		second = "0" + second;
+	}
+
+	return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second + " " + days;
+}
+var text = document.getElementById("time")
+setInterval(function () {
+	text.innerHTML = formatDate(new Date());
+}, 1000);

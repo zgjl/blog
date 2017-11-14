@@ -10,23 +10,23 @@ $(function () {
 
 	$("#li1").click(function () {
 		obj = $(this)
-		liClick("#section1",obj )
+		liClick("#section1", obj)
 	});
 	$("#li2").click(function () {
 		obj = $(this)
-		liClick("#section2",obj )
+		liClick("#section2", obj)
 	});
 	$("#li3").click(function () {
 		obj = $(this)
-		liClick("#section3",obj )
+		liClick("#section3", obj)
 	});
 	$("#li4").click(function () {
 		obj = $(this)
-		liClick("#section4",obj )
+		liClick("#section4", obj)
 	});
 	$("#li5").click(function () {
 		obj = $(this)
-		liClick("#section5",obj )
+		liClick("#section5", obj)
 	});
 
 	// $("#li1").click(function () {
@@ -150,6 +150,6 @@ $(function () {
 			})
 			$(this).text("全文")
 		}
-	})
-
+	})	
 })
+

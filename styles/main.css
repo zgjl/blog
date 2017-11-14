@@ -40,15 +40,16 @@ header {
     font-size: 14px;
     margin-bottom: 10px;
     padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
     border-radius: 2px;
-    background-color: rgb(210, 230, 230)
+    background-color: rgb(210, 230, 230);
+    position: relative;
 }
 header p{
     float:left;
     padding-top: 8px;
 }
-header div {
+.switch {
     float: right;
     margin-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -77,7 +78,12 @@ header div {
     border-left: none;
     cursor: pointer;
 }
-
+#time{
+    position:absolute;
+    top:10px;
+    left:20px;
+    font-size: 14px;
+}
 .active {
     background-color: rgb(45, 155, 189)
 }
