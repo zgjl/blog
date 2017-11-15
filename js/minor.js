@@ -1,3 +1,4 @@
+// 回到底部效果
 window.onload = function () {
 	var obtn = document.getElementById('totop');
 	var obtn1 = document.getElementById('btn-top');
@@ -38,6 +39,7 @@ window.onload = function () {
 	}
 }
 
+// 时间格式化
 function formatDate(dt) {
 	if (!dt) {
 		var dt = new Date();
@@ -91,7 +93,7 @@ function formatDate(dt) {
 		second = "0" + second;
 	}
 
-	return year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second + " " + days;
+	return days+ " " +year + "-" + month + "-" + date + " " + hour + ":" + minute + ":" + second;
 }
 var text = document.getElementById("time")
 setInterval(function () {

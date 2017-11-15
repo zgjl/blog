@@ -50,11 +50,11 @@ footer div {
 
 header {
     background-color: white;
-    height: 60px;
+    height: 70px;
     font-size: 14px;
     margin-bottom: 10px;
     padding-left: 20px;
-    padding-top: 30px;
+    padding-top: 10px;
     border-radius: 2px;
     background-color: rgb(210, 230, 230);
     position: relative;
@@ -63,12 +63,15 @@ header {
 header p {
     float: left;
     padding-top: 8px;
+    font-weight: 600;
+    font-size:18px;
 }
 
 .switch {
     float: right;
     margin-right: 20px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .switch {
@@ -97,7 +100,7 @@ header p {
 
 #time {
     position: absolute;
-    top: 10px;
+    bottom: 5px;
     left: 20px;
     font-size: 14px;
 }
@@ -162,6 +165,7 @@ aside li {
     font-size: 12px;
     margin-left: 10px;
     line-height: 24px;
+    color:rgb(130, 93, 91);
 }
 
 section {
@@ -181,6 +185,7 @@ section {
 
 .title {
     font-size: 20px;
+    font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
 }

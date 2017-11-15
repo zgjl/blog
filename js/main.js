@@ -1,7 +1,7 @@
 $(function () {
-	
-	var total2 = 11;//前端知识,网页数量
-	var total4 = 5;//文摘笔记,网页数量
+
+	var total2 = 11; //前端知识,网页数量
+	var total4 = 5; //文摘笔记,网页数量
 
 	var num2 = total2 - 3;
 	! function () {
@@ -57,7 +57,7 @@ $(function () {
 				}
 			});
 		}
-		
+
 	}();
 	$(".loadhtml4").click(function () {
 		if (num4 == 0) {
@@ -113,7 +113,7 @@ $(function () {
 	var dt1 = new Date();
 	var hour1 = dt1.getHours();
 
-	if(!(hour1>=6&&hour1<=17)){
+	if (!(hour1 >= 6 && hour1 <= 17)) {
 		$(".switch-open").addClass("active");
 		$(".switch-close").removeClass("active");
 		$("body").css("background-color", "rgb(63, 63, 63)");
@@ -166,6 +166,34 @@ $(function () {
 			$(this).text("全文")
 		}
 	})
+
+	$("#li1").mouseover(function () {
+		$(this).css("background-color", "rgba(199, 158, 254,0.7)");
+	}).mouseout(function () {
+		$(this).css("background-color", "rgb(199, 158, 254)");
+	});
+	$("#li2").mouseover(function () {
+		$(this).css("background-color", "rgba(254, 187, 80,0.7)");
+	}).mouseout(function () {
+		$(this).css("background-color", "rgb(254, 187, 80)");
+	});
+	$("#li3").mouseover(function () {
+		$(this).css("background-color", "rgba(193, 228, 222,0.7)");
+	}).mouseout(function () {
+		$(this).css("background-color", "rgb(193, 228, 222)");
+	});
+	$("#li4").mouseover(function () {
+		$(this).css("background-color", "rgba(246, 149, 129,0.7)");
+	}).mouseout(function () {
+		$(this).css("background-color", "rgb(246, 149, 129)");
+	});
+	$("#li5").mouseover(function () {
+		$(this).css("background-color", "rgba(63, 254, 211,0.7)");
+	}).mouseout(function () {
+		$(this).css("background-color", "rgb(63, 254, 211)");
+	});
+
+
 
 	$("#music audio").css({
 		"width": "140px",
